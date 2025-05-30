@@ -60,7 +60,7 @@ const Index = () => {
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900 text-lg px-8 py-4">
                 <a href="tel:6045404955">
                   <Phone className="w-5 h-5 mr-2" />
-                  Emergency Service
+                  Call for Service
                 </a>
               </Button>
             </div>
@@ -81,12 +81,12 @@ const Index = () => {
               <div className="text-gray-700">Projects Completed</div>
             </div>
             <div className="slide-up">
-              <div className="text-3xl font-bold text-blue-600 mb-2">24/7</div>
-              <div className="text-gray-700">Emergency Service</div>
-            </div>
-            <div className="slide-up">
               <div className="text-3xl font-bold text-blue-600 mb-2">100%</div>
               <div className="text-gray-700">Licensed & Insured</div>
+            </div>
+            <div className="slide-up">
+              <div className="text-3xl font-bold text-blue-600 mb-2">5★</div>
+              <div className="text-gray-700">Customer Rating</div>
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@ const Index = () => {
                   <Phone className="w-6 h-6 text-blue-600" />
                   <div>
                     <div className="font-semibold">(604) 540-4955</div>
-                    <div className="text-sm text-gray-600">24/7 Emergency Line</div>
+                    <div className="text-sm text-gray-600">Call for Service</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -184,7 +184,7 @@ const Index = () => {
                   <Calendar className="w-6 h-6 text-blue-600" />
                   <div>
                     <div className="font-semibold">Mon-Fri: 7AM-6PM</div>
-                    <div className="text-sm text-gray-600">Emergency service available 24/7</div>
+                    <div className="text-sm text-gray-600">Saturday: 8AM-4PM</div>
                   </div>
                 </div>
               </div>
@@ -230,7 +230,7 @@ const Index = () => {
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Contact us today for a free estimate on your HVAC project. 
-            Emergency services available 24/7 throughout the Lower Mainland.
+            Professional service throughout the Lower Mainland.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">

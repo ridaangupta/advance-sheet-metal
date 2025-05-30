@@ -104,35 +104,35 @@ const Services = () => {
       </section>
 
       {/* Emergency Service */}
-      <section className="py-20 bg-red-50">
+      <section className="py-20 bg-blue-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              24/7 Emergency Service
+              Professional HVAC Service
             </h2>
             <p className="text-xl text-gray-700 mb-8">
-              HVAC emergencies don't wait for business hours. Our emergency service team is available 24/7 
-              to restore comfort to your home or business quickly and efficiently.
+              Our experienced team provides reliable HVAC solutions for your home or business. 
+              We're committed to delivering quality workmanship and customer satisfaction.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
               <div className="text-center">
-                <Phone className="w-12 h-12 text-red-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Fast Response</h3>
-                <p className="text-gray-600">Average response time under 2 hours</p>
+                <Phone className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Reliable Service</h3>
+                <p className="text-gray-600">Professional and dependable technicians</p>
               </div>
               <div className="text-center">
-                <Users className="w-12 h-12 text-red-600 mx-auto mb-4" />
+                <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Expert Technicians</h3>
                 <p className="text-gray-600">Licensed and experienced professionals</p>
               </div>
               <div className="text-center">
-                <Map className="w-12 h-12 text-red-600 mx-auto mb-4" />
+                <Map className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Local Service</h3>
                 <p className="text-gray-600">Serving all of Lower Mainland</p>
               </div>
             </div>
-            <Button asChild size="lg" className="bg-red-600 hover:bg-red-700">
-              <a href="tel:6045554822">Call Emergency Line</a>
+            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+              <a href="tel:6045404955">Call for Service</a>
             </Button>
           </div>
         </div>
@@ -161,7 +161,7 @@ const Services = () => {
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">25+ Years Experience</h3>
+                    <h3 className="text-xl font-semibold mb-2">40+ Years Experience</h3>
                     <p className="text-gray-600">Decades of experience serving the Lower Mainland community.</p>
                   </div>
                 </div>

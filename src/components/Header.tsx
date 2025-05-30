@@ -61,7 +61,7 @@ const Header = () => {
                 <Phone className="w-4 h-4" />
                 <span className="font-semibold">(604) 540-4955</span>
               </div>
-              <div className="text-sm text-gray-600">24/7 Emergency Service</div>
+              <div className="text-sm text-gray-600">Professional Service</div>
             </div>
             <Button asChild className="bg-blue-600 hover:bg-blue-700">
               <Link to="/contact">Get Quote</Link>

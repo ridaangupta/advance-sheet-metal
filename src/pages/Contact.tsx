@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -67,8 +66,7 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8">
-              Ready to get started? Contact us today for a free quote on your HVAC project. 
-              Emergency services available 24/7.
+              Ready to get started? Contact us today for a free quote on your HVAC project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
@@ -233,7 +231,6 @@ const Contact = () => {
                     <div>
                       <div className="font-semibold">Phone</div>
                       <div className="text-gray-600">(604) 540-4955</div>
-                      <div className="text-sm text-gray-500">24/7 Emergency Line</div>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -258,12 +255,8 @@ const Contact = () => {
                       <div className="font-semibold">Regular Hours</div>
                       <div className="text-gray-600">Monday - Friday: 7:00 AM - 6:00 PM</div>
                       <div className="text-gray-600">Saturday: 8:00 AM - 4:00 PM</div>
-                      <div className="text-gray-600">Sunday: Emergency only</div>
+                      <div className="text-gray-600">Sunday: Closed</div>
                     </div>
-                  </div>
-                  <div className="bg-red-50 p-3 rounded-lg">
-                    <div className="font-semibold text-red-800">Emergency Service</div>
-                    <div className="text-red-700">Available 24/7 for urgent repairs</div>
                   </div>
                 </CardContent>
               </Card>
@@ -317,19 +310,19 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Emergency CTA */}
-      <section className="py-12 bg-red-600 text-white">
+      {/* Service CTA */}
+      <section className="py-12 bg-blue-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            HVAC Emergency? We're Here to Help!
+            Need HVAC Service? We're Here to Help!
           </h2>
           <p className="text-xl mb-6">
-            Don't wait - emergency HVAC problems require immediate attention.
+            Contact us today for professional HVAC solutions.
           </p>
-          <Button asChild size="lg" variant="secondary" className="bg-white text-red-600 hover:bg-gray-100">
+          <Button asChild size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
             <a href="tel:6045404955">
               <Phone className="w-5 h-5 mr-2" />
-              Call Emergency Line Now
+              Call Now
             </a>
           </Button>
         </div>
