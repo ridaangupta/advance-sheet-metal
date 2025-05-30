@@ -24,8 +24,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">ASM</span>
+            <div className="w-12 h-12 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/faf92a7b-f67b-4e87-b52f-6346f769737a.png" 
+                alt="Advance Sheet Metal" 
+                className="w-10 h-10 object-contain"
+              />
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-gray-900">Advance Sheet Metal</h1>
@@ -55,7 +59,7 @@ const Header = () => {
             <div className="text-right">
               <div className="flex items-center space-x-2 text-gray-700">
                 <Phone className="w-4 h-4" />
-                <span className="font-semibold">(604) 555-HVAC</span>
+                <span className="font-semibold">(604) 540-4955</span>
               </div>
               <div className="text-sm text-gray-600">24/7 Emergency Service</div>
             </div>
@@ -92,7 +96,7 @@ const Header = () => {
               <div className="pt-4 border-t border-gray-200">
                 <div className="flex items-center space-x-2 text-gray-700 mb-2">
                   <Phone className="w-4 h-4" />
-                  <span className="font-semibold">(604) 555-HVAC</span>
+                  <span className="font-semibold">(604) 540-4955</span>
                 </div>
                 <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
                   <Link to="/contact" onClick={() => setIsMenuOpen(false)}>

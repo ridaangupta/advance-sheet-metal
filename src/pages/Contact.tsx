@@ -72,13 +72,13 @@ const Contact = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
-                <a href="tel:6045554822">
+                <a href="tel:6045404955">
                   <Phone className="w-5 h-5 mr-2" />
-                  Call Now: (604) 555-HVAC
+                  Call Now: (604) 540-4955
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
-                <a href="mailto:info@advancesheetmetal.ca">
+                <a href="mailto:info@advancesheetmetal.com">
                   <Mail className="w-5 h-5 mr-2" />
                   Email Us
                 </a>
@@ -223,7 +223,7 @@ const Contact = () => {
                     <div>
                       <div className="font-semibold">Address</div>
                       <div className="text-gray-600">
-                        123 Industrial Way<br />
+                        1546 Derwent Way # 311C<br />
                         Delta, BC V4K 3N5
                       </div>
                     </div>
@@ -232,7 +232,7 @@ const Contact = () => {
                     <Phone className="w-5 h-5 text-blue-600 mt-1" />
                     <div>
                       <div className="font-semibold">Phone</div>
-                      <div className="text-gray-600">(604) 555-HVAC</div>
+                      <div className="text-gray-600">(604) 540-4955</div>
                       <div className="text-sm text-gray-500">24/7 Emergency Line</div>
                     </div>
                   </div>
@@ -240,7 +240,7 @@ const Contact = () => {
                     <Mail className="w-5 h-5 text-blue-600 mt-1" />
                     <div>
                       <div className="font-semibold">Email</div>
-                      <div className="text-gray-600">info@advancesheetmetal.ca</div>
+                      <div className="text-gray-600">info@advancesheetmetal.com</div>
                     </div>
                   </div>
                 </CardContent>
@@ -309,7 +309,7 @@ const Contact = () => {
               <div className="text-center text-gray-600">
                 <Map className="w-16 h-16 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Interactive Map</h3>
-                <p>123 Industrial Way, Delta, BC V4K 3N5</p>
+                <p>1546 Derwent Way # 311C, Delta, BC V4K 3N5</p>
                 <p className="text-sm mt-2">Map integration would be added here</p>
               </div>
             </div>
@@ -327,7 +327,7 @@ const Contact = () => {
             Don't wait - emergency HVAC problems require immediate attention.
           </p>
           <Button asChild size="lg" variant="secondary" className="bg-white text-red-600 hover:bg-gray-100">
-            <a href="tel:6045554822">
+            <a href="tel:6045404955">
               <Phone className="w-5 h-5 mr-2" />
               Call Emergency Line Now
             </a>

@@ -10,8 +10,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">ASM</span>
+              <div className="w-10 h-10 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/faf92a7b-f67b-4e87-b52f-6346f769737a.png" 
+                  alt="Advance Sheet Metal" 
+                  className="w-8 h-8 object-contain filter brightness-0 invert"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Advance Sheet Metal Limited</h3>
@@ -24,15 +28,15 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <Map className="w-4 h-4 text-blue-400" />
-                <span>Delta, British Columbia</span>
+                <span>1546 Derwent Way # 311C, Delta, BC</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-blue-400" />
-                <span>(604) 555-HVAC</span>
+                <span>(604) 540-4955</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-blue-400" />
-                <span>info@advancesheetmetal.ca</span>
+                <span>info@advancesheetmetal.com</span>
               </div>
             </div>
           </div>

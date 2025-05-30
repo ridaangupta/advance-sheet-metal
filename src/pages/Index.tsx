@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, Users, Calendar, Map } from "lucide-react";
+import { Phone, Users, Calendar, Map, Mail } from "lucide-react";
 
 const Index = () => {
   const services = [
@@ -51,14 +51,14 @@ const Index = () => {
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100">
               Professional heating, cooling, and sheet metal services throughout the Lower Mainland. 
-              Licensed, insured, and committed to excellence since 1995.
+              Licensed, insured, and committed to excellence for over 40 years.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
                 <Link to="/contact">Get Free Estimate</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900 text-lg px-8 py-4">
-                <a href="tel:6045554822">
+                <a href="tel:6045404955">
                   <Phone className="w-5 h-5 mr-2" />
                   Emergency Service
                 </a>
@@ -73,7 +73,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="slide-up">
-              <div className="text-3xl font-bold text-blue-600 mb-2">25+</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2">40+</div>
               <div className="text-gray-700">Years Experience</div>
             </div>
             <div className="slide-up">
@@ -169,14 +169,14 @@ const Index = () => {
                 <div className="flex items-center space-x-3">
                   <Phone className="w-6 h-6 text-blue-600" />
                   <div>
-                    <div className="font-semibold">(604) 555-HVAC</div>
+                    <div className="font-semibold">(604) 540-4955</div>
                     <div className="text-sm text-gray-600">24/7 Emergency Line</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Users className="w-6 h-6 text-blue-600" />
+                  <Mail className="w-6 h-6 text-blue-600" />
                   <div>
-                    <div className="font-semibold">info@advancesheetmetal.ca</div>
+                    <div className="font-semibold">info@advancesheetmetal.com</div>
                     <div className="text-sm text-gray-600">Email for quotes</div>
                   </div>
                 </div>
@@ -237,7 +237,7 @@ const Index = () => {
               <Link to="/contact">Get Free Quote</Link>
             </Button>
             <Button asChild size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 text-lg px-8 py-4">
-              <a href="tel:6045554822">Call Now</a>
+              <a href="tel:6045404955">Call Now</a>
             </Button>
           </div>
         </div>
