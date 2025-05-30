@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -57,7 +58,7 @@ const Index = () => {
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
                 <Link to="/contact">Get Free Estimate</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900 text-lg px-8 py-4">
+              <Button asChild size="lg" className="bg-white text-blue-900 hover:bg-blue-50 border-2 border-white text-lg px-8 py-4">
                 <a href="tel:6045404955">
                   <Phone className="w-5 h-5 mr-2" />
                   Call for Service
