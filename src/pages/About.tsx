@@ -71,13 +71,13 @@ const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
+      <section className="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               About Advance Sheet Metal
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8">
+            <p className="text-xl md:text-2xl text-gray-100 mb-8">
               Serving the Lower Mainland with professional HVAC services since 1995. 
               Family-owned, locally operated, and committed to excellence.
             </p>
@@ -113,35 +113,35 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-blue-50 p-8 rounded-lg">
+            <div className="bg-gray-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Company Highlights</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <Calendar className="w-6 h-6 text-blue-600" />
+                  <Calendar className="w-6 h-6 text-gray-800" />
                   <div>
                     <div className="font-semibold">Established 1995</div>
                     <div className="text-sm text-gray-600">25+ years serving the community</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Users className="w-6 h-6 text-blue-600" />
+                  <Users className="w-6 h-6 text-gray-800" />
                   <div>
                     <div className="font-semibold">1000+ Projects</div>
                     <div className="text-sm text-gray-600">Residential and commercial</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Map className="w-6 h-6 text-blue-600" />
+                  <Map className="w-6 h-6 text-gray-800" />
                   <div>
                     <div className="font-semibold">Lower Mainland</div>
                     <div className="text-sm text-gray-600">Local experts you can trust</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Phone className="w-6 h-6 text-blue-600" />
+                  <Phone className="w-6 h-6 text-gray-800" />
                   <div>
-                    <div className="font-semibold">24/7 Emergency</div>
-                    <div className="text-sm text-gray-600">Always here when you need us</div>
+                    <div className="font-semibold">Professional Service</div>
+                    <div className="text-sm text-gray-600">Available when you need us</div>
                   </div>
                 </div>
               </div>
@@ -196,7 +196,7 @@ const About = () => {
                      style={{ backgroundImage: `url(${member.image})` }}></div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
-                  <p className="text-blue-600 font-medium mb-2">{member.position}</p>
+                  <p className="text-gray-800 font-medium mb-2">{member.position}</p>
                   <p className="text-sm text-gray-600 mb-2">{member.experience}</p>
                   <p className="text-xs text-gray-500">{member.certifications}</p>
                 </CardContent>
@@ -207,7 +207,7 @@ const About = () => {
       </section>
 
       {/* Certifications */}
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -221,7 +221,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {certifications.map((cert, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-sm border">
-                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white font-bold">✓</span>
                   </div>
                   <h3 className="font-semibold text-gray-900">{cert}</h3>
@@ -244,14 +244,14 @@ const About = () => {
               </h2>
               <p className="text-gray-700 mb-6">
                 As proud members of the Delta community, we believe in giving back. We support 
-                local sports teams, participate in community events, and provide emergency services 
+                local sports teams, participate in community events, and provide professional services 
                 during extreme weather events.
               </p>
               <p className="text-gray-700 mb-6">
                 Our commitment extends beyond just HVAC services – we're your neighbors, and we're 
                 invested in the comfort and well-being of our entire community.
               </p>
-              <Button asChild className="bg-blue-600 hover:bg-blue-700">
+              <Button asChild className="bg-gray-800 hover:bg-gray-900">
                 <Link to="/contact">Join Our Community of Satisfied Customers</Link>
               </Button>
             </div>
@@ -270,7 +270,7 @@ const About = () => {
             Contact us today for your HVAC needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-700">
               <Link to="/contact">Get Started Today</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900">

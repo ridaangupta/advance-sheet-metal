@@ -59,23 +59,23 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
+      <section className="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Contact Us
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8">
+            <p className="text-xl md:text-2xl text-gray-100 mb-8">
               Ready to get started? Contact us today for a free quote on your HVAC project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Button asChild size="lg" variant="secondary" className="bg-white text-gray-800 hover:bg-gray-100">
                 <a href="tel:6045404955">
                   <Phone className="w-5 h-5 mr-2" />
                   Call Now: (604) 540-4955
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-800">
                 <a href="mailto:info@advancesheetmetal.com">
                   <Mail className="w-5 h-5 mr-2" />
                   Email Us
@@ -200,7 +200,7 @@ const Contact = () => {
                       />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700">
+                    <Button type="submit" size="lg" className="w-full bg-gray-800 hover:bg-gray-900">
                       Submit Quote Request
                     </Button>
                   </form>
@@ -217,7 +217,7 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <Map className="w-5 h-5 text-blue-600 mt-1" />
+                    <Map className="w-5 h-5 text-gray-800 mt-1" />
                     <div>
                       <div className="font-semibold">Address</div>
                       <div className="text-gray-600">
@@ -227,14 +227,14 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Phone className="w-5 h-5 text-blue-600 mt-1" />
+                    <Phone className="w-5 h-5 text-gray-800 mt-1" />
                     <div>
                       <div className="font-semibold">Phone</div>
                       <div className="text-gray-600">(604) 540-4955</div>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Mail className="w-5 h-5 text-blue-600 mt-1" />
+                    <Mail className="w-5 h-5 text-gray-800 mt-1" />
                     <div>
                       <div className="font-semibold">Email</div>
                       <div className="text-gray-600">info@advancesheetmetal.com</div>
@@ -250,7 +250,7 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex items-center space-x-3">
-                    <Clock className="w-5 h-5 text-blue-600" />
+                    <Clock className="w-5 h-5 text-gray-800" />
                     <div>
                       <div className="font-semibold">Regular Hours</div>
                       <div className="text-gray-600">Monday - Friday: 7:00 AM - 6:00 PM</div>
@@ -273,7 +273,7 @@ const Contact = () => {
                   <div className="grid grid-cols-2 gap-2 text-sm text-gray-700">
                     {serviceAreas.map((area, index) => (
                       <div key={index} className="flex items-center space-x-2">
-                        <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+                        <div className="w-1.5 h-1.5 bg-gray-800 rounded-full"></div>
                         <span>{area}</span>
                       </div>
                     ))}
@@ -311,7 +311,7 @@ const Contact = () => {
       </section>
 
       {/* Service CTA */}
-      <section className="py-12 bg-blue-600 text-white">
+      <section className="py-12 bg-gray-800 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Need HVAC Service? We're Here to Help!
@@ -319,7 +319,7 @@ const Contact = () => {
           <p className="text-xl mb-6">
             Contact us today for professional HVAC solutions.
           </p>
-          <Button asChild size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+          <Button asChild size="lg" variant="secondary" className="bg-white text-gray-800 hover:bg-gray-100">
             <a href="tel:6045404955">
               <Phone className="w-5 h-5 mr-2" />
               Call Now

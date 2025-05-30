@@ -14,8 +14,8 @@ const Services = () => {
     },
     {
       title: "HVAC Repair & Maintenance",
-      description: "24/7 emergency repair services and preventive maintenance programs to keep your systems running smoothly.",
-      features: ["24/7 emergency service", "Preventive maintenance", "System diagnostics", "Parts warranty"],
+      description: "Professional repair services and preventive maintenance programs to keep your systems running smoothly.",
+      features: ["Professional service", "Preventive maintenance", "System diagnostics", "Parts warranty"],
       image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop"
     },
     {
@@ -39,7 +39,7 @@ const Services = () => {
     {
       title: "Commercial HVAC Services",
       description: "Comprehensive commercial heating, cooling, and ventilation solutions for businesses of all sizes.",
-      features: ["Large-scale installations", "Planned maintenance", "Emergency service", "System design"],
+      features: ["Large-scale installations", "Planned maintenance", "Professional service", "System design"],
       image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop"
     }
   ];
@@ -47,16 +47,16 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
+      <section className="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Complete HVAC Services
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8">
+            <p className="text-xl md:text-2xl text-gray-100 mb-8">
               Professional heating, cooling, and sheet metal solutions for residential and commercial clients throughout the Lower Mainland.
             </p>
-            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-500">
+            <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-900">
               <Link to="/contact">Request Service Quote</Link>
             </Button>
           </div>
@@ -88,7 +88,7 @@ const Services = () => {
                   <ul className="space-y-2 mb-6">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                        <div className="w-2 h-2 bg-gray-800 rounded-full"></div>
                         <span className="text-gray-700">{feature}</span>
                       </li>
                     ))}
@@ -103,8 +103,8 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Emergency Service */}
-      <section className="py-20 bg-blue-50">
+      {/* Professional Service */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -116,22 +116,22 @@ const Services = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
               <div className="text-center">
-                <Phone className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                <Phone className="w-12 h-12 text-gray-800 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Reliable Service</h3>
                 <p className="text-gray-600">Professional and dependable technicians</p>
               </div>
               <div className="text-center">
-                <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                <Users className="w-12 h-12 text-gray-800 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Expert Technicians</h3>
                 <p className="text-gray-600">Licensed and experienced professionals</p>
               </div>
               <div className="text-center">
-                <Map className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                <Map className="w-12 h-12 text-gray-800 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Local Service</h3>
                 <p className="text-gray-600">Serving all of Lower Mainland</p>
               </div>
             </div>
-            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-900">
               <a href="tel:6045404955">Call for Service</a>
             </Button>
           </div>
@@ -148,7 +148,7 @@ const Services = () => {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
                   <div>
@@ -157,7 +157,7 @@ const Services = () => {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
                   <div>
@@ -166,7 +166,7 @@ const Services = () => {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
                   <div>
@@ -175,7 +175,7 @@ const Services = () => {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
                   <div>
@@ -185,43 +185,43 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-blue-50 p-8 rounded-lg">
+            <div className="bg-gray-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Service Areas</h3>
               <div className="grid grid-cols-2 gap-4 text-gray-700">
                 <div className="flex items-center space-x-2">
-                  <Map className="w-4 h-4 text-blue-600" />
+                  <Map className="w-4 h-4 text-gray-800" />
                   <span>Delta</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Map className="w-4 h-4 text-blue-600" />
+                  <Map className="w-4 h-4 text-gray-800" />
                   <span>Richmond</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Map className="w-4 h-4 text-blue-600" />
+                  <Map className="w-4 h-4 text-gray-800" />
                   <span>Surrey</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Map className="w-4 h-4 text-blue-600" />
+                  <Map className="w-4 h-4 text-gray-800" />
                   <span>Vancouver</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Map className="w-4 h-4 text-blue-600" />
+                  <Map className="w-4 h-4 text-gray-800" />
                   <span>Burnaby</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Map className="w-4 h-4 text-blue-600" />
+                  <Map className="w-4 h-4 text-gray-800" />
                   <span>New Westminster</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Map className="w-4 h-4 text-blue-600" />
+                  <Map className="w-4 h-4 text-gray-800" />
                   <span>Langley</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Map className="w-4 h-4 text-blue-600" />
+                  <Map className="w-4 h-4 text-gray-800" />
                   <span>Coquitlam</span>
                 </div>
               </div>
-              <Button asChild className="w-full mt-6 bg-blue-600 hover:bg-blue-700">
+              <Button asChild className="w-full mt-6 bg-gray-800 hover:bg-gray-900">
                 <Link to="/contact">Schedule Service</Link>
               </Button>
             </div>

@@ -72,13 +72,13 @@ const Projects = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
+      <section className="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Our Projects
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8">
+            <p className="text-xl md:text-2xl text-gray-100 mb-8">
               See examples of our quality workmanship across residential, commercial, and industrial HVAC projects throughout the Lower Mainland.
             </p>
           </div>
@@ -94,7 +94,7 @@ const Projects = () => {
                 key={filter.id}
                 variant={activeFilter === filter.id ? "default" : "outline"}
                 onClick={() => setActiveFilter(filter.id)}
-                className={activeFilter === filter.id ? "bg-blue-600 hover:bg-blue-700" : ""}
+                className={activeFilter === filter.id ? "bg-gray-800 hover:bg-gray-900" : ""}
               >
                 {filter.label}
               </Button>
@@ -113,7 +113,7 @@ const Projects = () => {
                      style={{ backgroundImage: `url(${project.image})` }}></div>
                 <CardHeader>
                   <div className="flex justify-between items-start mb-2">
-                    <span className="inline-block px-3 py-1 text-xs font-semibold text-blue-600 bg-blue-100 rounded-full capitalize">
+                    <span className="inline-block px-3 py-1 text-xs font-semibold text-gray-800 bg-gray-200 rounded-full capitalize">
                       {project.category}
                     </span>
                   </div>
@@ -125,7 +125,7 @@ const Projects = () => {
                   <ul className="space-y-1 mb-6">
                     {project.details.map((detail, detailIndex) => (
                       <li key={detailIndex} className="flex items-center space-x-2 text-sm">
-                        <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+                        <div className="w-1.5 h-1.5 bg-gray-800 rounded-full"></div>
                         <span className="text-gray-700">{detail}</span>
                       </li>
                     ))}
@@ -192,20 +192,20 @@ const Projects = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600 text-white">
+      <section className="py-20 bg-gray-800 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Project?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Let us bring the same level of expertise and quality to your HVAC project. 
             Contact us today for a free consultation and quote.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+            <Button asChild size="lg" variant="secondary" className="bg-white text-gray-800 hover:bg-gray-100">
               <Link to="/contact">Get Free Quote</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-800">
               <a href="tel:6045554822">Call Today</a>
             </Button>
           </div>
