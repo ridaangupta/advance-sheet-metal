@@ -27,15 +27,15 @@ const Footer = () => {
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
-                <Map className="w-4 h-4 text-blue-400" />
+                <Map className="w-4 h-4 text-gray-400" />
                 <span>1546 Derwent Way # 311C, Delta, BC</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Phone className="w-4 h-4 text-blue-400" />
+                <Phone className="w-4 h-4 text-gray-400" />
                 <span>(604) 540-4955</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Mail className="w-4 h-4 text-blue-400" />
+                <Mail className="w-4 h-4 text-gray-400" />
                 <span>info@advancesheetmetal.com</span>
               </div>
             </div>

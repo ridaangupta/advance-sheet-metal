@@ -13,7 +13,7 @@ const Index = () => {
     },
     {
       title: "Repair & Maintenance",
-      description: "24/7 emergency repair services and preventive maintenance programs.",
+      description: "Professional repair services and preventive maintenance programs.",
       image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop"
     },
     {
@@ -48,17 +48,17 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Delta's Trusted <span className="text-blue-300">HVAC</span> Experts
+              Delta's Trusted <span className="text-gray-300">HVAC</span> Experts
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
+            <p className="text-xl md:text-2xl mb-8 text-gray-100">
               Professional heating, cooling, and sheet metal services throughout the Lower Mainland. 
               Licensed, insured, and committed to excellence for over 40 years.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
+              <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-900 text-lg px-8 py-4">
                 <Link to="/contact">Get Free Estimate</Link>
               </Button>
-              <Button asChild size="lg" className="bg-white text-blue-900 hover:bg-blue-50 border-2 border-white text-lg px-8 py-4">
+              <Button asChild size="lg" className="bg-white text-gray-900 hover:bg-gray-50 border-2 border-white text-lg px-8 py-4">
                 <a href="tel:6045404955">
                   <Phone className="w-5 h-5 mr-2" />
                   Call for Service
@@ -74,19 +74,19 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="slide-up">
-              <div className="text-3xl font-bold text-blue-600 mb-2">40+</div>
+              <div className="text-3xl font-bold text-gray-800 mb-2">40+</div>
               <div className="text-gray-700">Years Experience</div>
             </div>
             <div className="slide-up">
-              <div className="text-3xl font-bold text-blue-600 mb-2">1000+</div>
+              <div className="text-3xl font-bold text-gray-800 mb-2">1000+</div>
               <div className="text-gray-700">Projects Completed</div>
             </div>
             <div className="slide-up">
-              <div className="text-3xl font-bold text-blue-600 mb-2">100%</div>
+              <div className="text-3xl font-bold text-gray-800 mb-2">100%</div>
               <div className="text-gray-700">Licensed & Insured</div>
             </div>
             <div className="slide-up">
-              <div className="text-3xl font-bold text-blue-600 mb-2">5★</div>
+              <div className="text-3xl font-bold text-gray-800 mb-2">5★</div>
               <div className="text-gray-700">Customer Rating</div>
             </div>
           </div>
@@ -125,7 +125,7 @@ const Index = () => {
       </section>
 
       {/* Service Area */}
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -139,27 +139,27 @@ const Index = () => {
               </p>
               <div className="grid grid-cols-2 gap-4 text-gray-700">
                 <div className="flex items-center space-x-2">
-                  <Map className="w-4 h-4 text-blue-600" />
+                  <Map className="w-4 h-4 text-gray-800" />
                   <span>Delta</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Map className="w-4 h-4 text-blue-600" />
+                  <Map className="w-4 h-4 text-gray-800" />
                   <span>Richmond</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Map className="w-4 h-4 text-blue-600" />
+                  <Map className="w-4 h-4 text-gray-800" />
                   <span>Surrey</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Map className="w-4 h-4 text-blue-600" />
+                  <Map className="w-4 h-4 text-gray-800" />
                   <span>Vancouver</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Map className="w-4 h-4 text-blue-600" />
+                  <Map className="w-4 h-4 text-gray-800" />
                   <span>Burnaby</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Map className="w-4 h-4 text-blue-600" />
+                  <Map className="w-4 h-4 text-gray-800" />
                   <span>New Westminster</span>
                 </div>
               </div>
@@ -168,28 +168,28 @@ const Index = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Quick Contact</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <Phone className="w-6 h-6 text-blue-600" />
+                  <Phone className="w-6 h-6 text-gray-800" />
                   <div>
                     <div className="font-semibold">(604) 540-4955</div>
                     <div className="text-sm text-gray-600">Call for Service</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Mail className="w-6 h-6 text-blue-600" />
+                  <Mail className="w-6 h-6 text-gray-800" />
                   <div>
                     <div className="font-semibold">info@advancesheetmetal.com</div>
                     <div className="text-sm text-gray-600">Email for quotes</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Calendar className="w-6 h-6 text-blue-600" />
+                  <Calendar className="w-6 h-6 text-gray-800" />
                   <div>
                     <div className="font-semibold">Mon-Fri: 7AM-6PM</div>
                     <div className="text-sm text-gray-600">Saturday: 8AM-4PM</div>
                   </div>
                 </div>
               </div>
-              <Button asChild className="w-full mt-6 bg-blue-600 hover:bg-blue-700">
+              <Button asChild className="w-full mt-6 bg-gray-800 hover:bg-gray-900">
                 <Link to="/contact">Request Service</Link>
               </Button>
             </div>
@@ -234,7 +234,7 @@ const Index = () => {
             Professional service throughout the Lower Mainland.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
+            <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-700 text-lg px-8 py-4">
               <Link to="/contact">Get Free Quote</Link>
             </Button>
             <Button asChild size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 text-lg px-8 py-4">

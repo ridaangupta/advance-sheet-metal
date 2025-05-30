@@ -45,8 +45,8 @@ const Header = () => {
                 to={item.path}
                 className={`font-medium transition-colors duration-200 ${
                   isActive(item.path)
-                    ? "text-blue-600 border-b-2 border-blue-600 pb-1"
-                    : "text-gray-700 hover:text-blue-600"
+                    ? "text-gray-800 border-b-2 border-gray-800 pb-1"
+                    : "text-gray-700 hover:text-gray-800"
                 }`}
               >
                 {item.label}
@@ -63,7 +63,7 @@ const Header = () => {
               </div>
               <div className="text-sm text-gray-600">Professional Service</div>
             </div>
-            <Button asChild className="bg-blue-600 hover:bg-blue-700">
+            <Button asChild className="bg-gray-800 hover:bg-gray-900">
               <Link to="/contact">Get Quote</Link>
             </Button>
           </div>
@@ -71,7 +71,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100"
+            className="lg:hidden p-2 rounded-md text-gray-700 hover:text-gray-800 hover:bg-gray-100"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -87,7 +87,7 @@ const Header = () => {
                   to={item.path}
                   onClick={() => setIsMenuOpen(false)}
                   className={`font-medium transition-colors duration-200 ${
-                    isActive(item.path) ? "text-blue-600" : "text-gray-700 hover:text-blue-600"
+                    isActive(item.path) ? "text-gray-800" : "text-gray-700 hover:text-gray-800"
                   }`}
                 >
                   {item.label}
@@ -98,7 +98,7 @@ const Header = () => {
                   <Phone className="w-4 h-4" />
                   <span className="font-semibold">(604) 540-4955</span>
                 </div>
-                <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button asChild className="w-full bg-gray-800 hover:bg-gray-900">
                   <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
                     Get Quote
                   </Link>
