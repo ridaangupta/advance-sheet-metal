@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Phone, Contact, Map, Calendar, Clock } from "lucide-react";
+import { Phone, Mail, Map, Calendar, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -79,7 +79,7 @@ const Contact = () => {
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
                 <a href="mailto:info@advancesheetmetal.ca">
-                  <Contact className="w-5 h-5 mr-2" />
+                  <Mail className="w-5 h-5 mr-2" />
                   Email Us
                 </a>
               </Button>
@@ -237,7 +237,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Contact className="w-5 h-5 text-blue-600 mt-1" />
+                    <Mail className="w-5 h-5 text-blue-600 mt-1" />
                     <div>
                       <div className="font-semibold">Email</div>
                       <div className="text-gray-600">info@advancesheetmetal.ca</div>

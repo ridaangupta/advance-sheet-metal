@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Phone, Contact, Map } from "lucide-react";
+import { Phone, Mail, Map } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -31,7 +31,7 @@ const Footer = () => {
                 <span>(604) 555-HVAC</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Contact className="w-4 h-4 text-blue-400" />
+                <Mail className="w-4 h-4 text-blue-400" />
                 <span>info@advancesheetmetal.ca</span>
               </div>
             </div>

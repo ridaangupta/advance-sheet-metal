@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -175,7 +174,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Contact className="w-6 h-6 text-blue-600" />
+                  <Users className="w-6 h-6 text-blue-600" />
                   <div>
                     <div className="font-semibold">info@advancesheetmetal.ca</div>
                     <div className="text-sm text-gray-600">Email for quotes</div>
