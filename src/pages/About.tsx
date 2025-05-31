@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,32 +6,46 @@ import { Users, Calendar, Phone, Map } from "lucide-react";
 const About = () => {
   const teamMembers = [
     {
-      name: "Mike Johnson",
-      position: "Owner & Lead Technician",
-      experience: "25+ years",
-      certifications: "Red Seal, Gas Fitter Class A",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
-    },
-    {
-      name: "Sarah Chen",
-      position: "Project Manager",
+      name: "Mavi",
+      position: "General Manager",
       experience: "15+ years",
-      certifications: "HVAC Technician, Safety Coordinator",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b0e0?w=300&h=300&fit=crop&crop=face"
+      certifications: "Project Management, Operations"
     },
     {
-      name: "David Rodriguez",
-      position: "Sheet Metal Specialist",
-      experience: "20+ years",
-      certifications: "Journeyman Sheet Metal Worker",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+      name: "Shabad",
+      position: "Head of Business Development",
+      experience: "12+ years",
+      certifications: "Business Development, Client Relations"
     },
     {
-      name: "Lisa Thompson",
-      position: "Customer Service Manager",
+      name: "Jorin",
+      position: "Head of Estimating",
+      experience: "18+ years",
+      certifications: "Cost Estimation, Project Planning"
+    },
+    {
+      name: "Shane",
+      position: "Estimator",
       experience: "10+ years",
-      certifications: "Customer Relations, Scheduling",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face"
+      certifications: "Cost Analysis, Technical Estimation"
+    },
+    {
+      name: "Vince",
+      position: "Estimator",
+      experience: "8+ years",
+      certifications: "Project Estimation, Material Sourcing"
+    },
+    {
+      name: "Tim",
+      position: "Shop Lead",
+      experience: "20+ years",
+      certifications: "Sheet Metal Fabrication, Shop Management"
+    },
+    {
+      name: "Hector",
+      position: "Site Lead",
+      experience: "16+ years",
+      certifications: "Site Management, Safety Coordination"
     }
   ];
 
@@ -189,11 +202,16 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
               <Card key={index} className="text-center overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-gray-200 bg-cover bg-center" 
-                     style={{ backgroundImage: `url(${member.image})` }}></div>
+                <div className="h-32 bg-gray-200 flex items-center justify-center">
+                  <div className="w-20 h-20 bg-gray-400 rounded-full flex items-center justify-center">
+                    <span className="text-2xl text-white font-bold">
+                      {member.name.charAt(0)}
+                    </span>
+                  </div>
+                </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
                   <p className="text-gray-800 font-medium mb-2">{member.position}</p>
