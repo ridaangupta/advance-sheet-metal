@@ -205,7 +205,7 @@ const Projects = () => {
             <Button asChild size="lg" variant="secondary" className="bg-white text-gray-800 hover:bg-gray-100">
               <Link to="/contact">Get Free Quote</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-800">
+            <Button asChild size="lg" className="bg-gray-600 text-white hover:bg-gray-500 border-gray-600">
               <a href="tel:6045554822">Call Today</a>
             </Button>
           </div>

@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -291,7 +292,7 @@ const About = () => {
             <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-700">
               <Link to="/contact">Get Started Today</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900">
+            <Button asChild size="lg" className="bg-gray-600 text-white hover:bg-gray-500 border-gray-600">
               <a href="tel:6045554822">Call Us Now</a>
             </Button>
           </div>
