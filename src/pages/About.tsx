@@ -7,46 +7,54 @@ import { Users, Calendar, Phone, Map } from "lucide-react";
 const About = () => {
   const teamMembers = [
     {
-      name: "Mavi",
-      position: "General Manager",
-      experience: "15+ years",
-      certifications: "Project Management, Operations"
+      name: "Allan Delong",
+      position: "Site Supervisor",
+      category: "Site Supervisors"
     },
     {
-      name: "Shabad",
-      position: "Head of Business Development",
-      experience: "12+ years",
-      certifications: "Business Development, Client Relations"
+      name: "Hector Giordano",
+      position: "Site Supervisor",
+      category: "Site Supervisors"
     },
     {
-      name: "Jorin",
-      position: "Head of Estimating",
-      experience: "18+ years",
-      certifications: "Cost Estimation, Project Planning"
+      name: "Stephen Seifried",
+      position: "Site Supervisor",
+      category: "Site Supervisors"
     },
     {
-      name: "Shane",
-      position: "Estimator",
-      experience: "10+ years",
-      certifications: "Cost Analysis, Technical Estimation"
+      name: "Aaron Rodgers",
+      position: "Site Supervisor",
+      category: "Site Supervisors"
     },
     {
-      name: "Vince",
-      position: "Estimator",
-      experience: "8+ years",
-      certifications: "Project Estimation, Material Sourcing"
+      name: "Karl Delong",
+      position: "Upcoming Talent",
+      category: "Upcoming Talent"
     },
     {
-      name: "Tim",
-      position: "Shop Lead",
-      experience: "20+ years",
-      certifications: "Sheet Metal Fabrication, Shop Management"
+      name: "Eugene Leo Naldoza",
+      position: "Upcoming Talent",
+      category: "Upcoming Talent"
     },
     {
-      name: "Hector",
-      position: "Site Lead",
-      experience: "16+ years",
-      certifications: "Site Management, Safety Coordination"
+      name: "Kin Ho Wong",
+      position: "Upcoming Talent",
+      category: "Upcoming Talent"
+    },
+    {
+      name: "Robert Delong",
+      position: "Shop Team",
+      category: "Shop"
+    },
+    {
+      name: "Timothy Hopkins",
+      position: "Shop Team",
+      category: "Shop"
+    },
+    {
+      name: "Graham Kruse",
+      position: "Shop Team",
+      category: "Shop"
     }
   ];
 
@@ -81,6 +89,15 @@ const About = () => {
       icon: "📚"
     }
   ];
+
+  // Group team members by category
+  const groupedTeam = teamMembers.reduce((acc, member) => {
+    if (!acc[member.category]) {
+      acc[member.category] = [];
+    }
+    acc[member.category].push(member);
+    return acc;
+  }, {} as Record<string, typeof teamMembers>);
 
   return (
     <div className="min-h-screen">
@@ -204,30 +221,33 @@ const About = () => {
               Meet Our Team
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our experienced, certified professionals are dedicated to providing you with 
-              the highest quality HVAC services and exceptional customer experience.
+              Our experienced professionals are dedicated to providing you with 
+              the highest quality HVAC sheet metal services and exceptional customer experience.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <Card key={index} className="text-center overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-32 bg-gray-200 flex items-center justify-center">
-                  <div className="w-20 h-20 bg-gray-400 rounded-full flex items-center justify-center">
-                    <span className="text-2xl text-white font-bold">
-                      {member.name.charAt(0)}
-                    </span>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
-                  <p className="text-gray-800 font-medium mb-2">{member.position}</p>
-                  <p className="text-sm text-gray-600 mb-2">{member.experience}</p>
-                  <p className="text-xs text-gray-500">{member.certifications}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          {Object.entries(groupedTeam).map(([category, members]) => (
+            <div key={category} className="mb-12">
+              <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">{category}</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                {members.map((member, index) => (
+                  <Card key={index} className="text-center overflow-hidden hover:shadow-lg transition-shadow">
+                    <div className="h-32 bg-gray-200 flex items-center justify-center">
+                      <div className="w-20 h-20 bg-gray-400 rounded-full flex items-center justify-center">
+                        <span className="text-2xl text-white font-bold">
+                          {member.name.charAt(0)}
+                        </span>
+                      </div>
+                    </div>
+                    <CardContent className="p-6">
+                      <h4 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h4>
+                      <p className="text-gray-800 font-medium">{member.position}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
