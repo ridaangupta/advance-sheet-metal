@@ -7,39 +7,39 @@ import { Phone, Calendar, Users, Map } from "lucide-react";
 const Services = () => {
   const services = [
     {
-      title: "HVAC Installation",
-      description: "Complete heating and cooling system installation for residential and commercial properties.",
-      features: ["Energy-efficient systems", "Professional installation", "Warranty included", "Code compliant"],
+      title: "Custom Ductwork Fabrication",
+      description: "Precision-engineered ductwork designed and fabricated in our shop to meet your exact specifications and project requirements.",
+      features: ["Custom design solutions", "Precision fabrication", "Quality materials", "Code compliant"],
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop"
     },
     {
-      title: "HVAC Repair & Maintenance",
-      description: "Professional repair services and preventive maintenance programs to keep your systems running smoothly.",
-      features: ["Professional service", "Preventive maintenance", "System diagnostics", "Parts warranty"],
+      title: "Sheet Metal Installation",
+      description: "Professional installation of custom sheet metal components for commercial, industrial, and residential HVAC systems.",
+      features: ["Expert installation", "Proper sealing", "System integration", "Quality workmanship"],
       image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop"
     },
     {
-      title: "Sheet Metal Fabrication",
-      description: "Custom ductwork and sheet metal solutions designed and fabricated to your exact specifications.",
-      features: ["Custom ductwork", "Commercial projects", "Precision fabrication", "Quality materials"],
+      title: "Ventilation Systems",
+      description: "Complete ventilation solutions including exhaust systems, makeup air units, and specialized ventilation for industrial applications.",
+      features: ["Exhaust systems", "Makeup air units", "Industrial ventilation", "Custom solutions"],
       image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=600&h=400&fit=crop"
     },
     {
-      title: "System Upgrades & Retrofits",
-      description: "Modernize your existing HVAC systems with energy-efficient upgrades and smart controls.",
-      features: ["Energy savings", "Smart thermostats", "System optimization", "Rebate assistance"],
+      title: "Ductwork Repair & Modification",
+      description: "Professional repair and modification services for existing ductwork systems to improve efficiency and performance.",
+      features: ["System repairs", "Efficiency improvements", "Modifications", "Maintenance services"],
       image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=600&h=400&fit=crop"
     },
     {
-      title: "Energy Efficiency Consultations",
-      description: "Professional assessments to help you reduce energy costs and improve system performance.",
-      features: ["Energy audits", "Cost analysis", "Efficiency recommendations", "Rebate programs"],
+      title: "Commercial Kitchen Exhaust",
+      description: "Specialized kitchen exhaust systems and ductwork for restaurants and commercial food service operations.",
+      features: ["Kitchen exhaust hoods", "Grease duct systems", "Fire suppression ready", "Health code compliant"],
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop"
     },
     {
-      title: "Commercial HVAC Services",
-      description: "Comprehensive commercial heating, cooling, and ventilation solutions for businesses of all sizes.",
-      features: ["Large-scale installations", "Planned maintenance", "Professional service", "System design"],
+      title: "Industrial Sheet Metal",
+      description: "Heavy-duty sheet metal fabrication and installation for industrial facilities, including specialized ventilation and process equipment.",
+      features: ["Heavy-duty construction", "Industrial grade materials", "Process ventilation", "Custom fabrication"],
       image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop"
     }
   ];
@@ -51,10 +51,10 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Complete HVAC Services
+              HVAC Sheet Metal Services
             </h1>
             <p className="text-xl md:text-2xl text-gray-100 mb-8">
-              Professional heating, cooling, and sheet metal solutions for residential and commercial clients throughout the Lower Mainland.
+              Specializing in custom ductwork fabrication and sheet metal solutions for residential, commercial, and industrial HVAC systems throughout the Lower Mainland.
             </p>
             <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-900">
               <Link to="/contact">Request Service Quote</Link>
@@ -68,10 +68,10 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Services
+              Our Specializations
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From emergency repairs to complete system installations, we provide comprehensive HVAC solutions with quality workmanship and reliable service.
+              From precision ductwork fabrication to complete sheet metal installations, we provide specialized HVAC metalwork solutions with expert craftsmanship and reliable service.
             </p>
           </div>
 
@@ -108,22 +108,22 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Professional HVAC Service
+              Sheet Metal Expertise
             </h2>
             <p className="text-xl text-gray-700 mb-8">
-              Our experienced team provides reliable HVAC solutions for your home or business. 
-              We're committed to delivering quality workmanship and customer satisfaction.
+              Our specialized team provides expert sheet metal fabrication and ductwork solutions for your project. 
+              We're committed to delivering precision metalwork and customer satisfaction.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
               <div className="text-center">
                 <Phone className="w-12 h-12 text-gray-800 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Reliable Service</h3>
-                <p className="text-gray-600">Professional and dependable technicians</p>
+                <h3 className="text-xl font-semibold mb-2">Custom Fabrication</h3>
+                <p className="text-gray-600">Precision sheet metal work in our shop</p>
               </div>
               <div className="text-center">
                 <Users className="w-12 h-12 text-gray-800 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Expert Technicians</h3>
-                <p className="text-gray-600">Licensed and experienced professionals</p>
+                <h3 className="text-xl font-semibold mb-2">Expert Installers</h3>
+                <p className="text-gray-600">Skilled technicians with metalwork expertise</p>
               </div>
               <div className="text-center">
                 <Map className="w-12 h-12 text-gray-800 mx-auto mb-4" />

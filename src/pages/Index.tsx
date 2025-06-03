@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,18 +6,18 @@ import { Phone, Users, Calendar, Map, Mail } from "lucide-react";
 const Index = () => {
   const services = [
     {
-      title: "HVAC Installation",
-      description: "Complete heating and cooling system installation for residential and commercial properties.",
+      title: "Custom Ductwork Fabrication",
+      description: "Precision-engineered ductwork and ventilation systems designed and fabricated to your exact specifications.",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop"
     },
     {
-      title: "Repair & Maintenance",
-      description: "Professional repair services and preventive maintenance programs.",
+      title: "Sheet Metal Installation",
+      description: "Professional installation of custom sheet metal solutions for commercial and industrial applications.",
       image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop"
     },
     {
-      title: "Sheet Metal Fabrication",
-      description: "Custom ductwork and sheet metal solutions for any project size.",
+      title: "HVAC Ductwork Services",
+      description: "Complete ductwork solutions including design, fabrication, installation, and maintenance services.",
       image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=400&h=300&fit=crop"
     }
   ];
@@ -48,11 +47,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Delta's Trusted <span className="text-gray-300">HVAC</span> Experts
+              Delta's Leading <span className="text-gray-300">Sheet Metal</span> Specialists
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-100">
-              Professional heating, cooling, and sheet metal services throughout the Lower Mainland. 
-              Licensed, insured, and committed to excellence for over 40 years.
+              Professional HVAC sheet metal fabrication and custom ductwork solutions throughout the Lower Mainland. 
+              Licensed, insured, and specializing in precision metalwork for over 40 years.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-900 text-lg px-8 py-4">
@@ -98,11 +97,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Complete HVAC Solutions
+              HVAC Sheet Metal Solutions
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From residential repairs to large commercial installations, we provide comprehensive 
-              heating, cooling, and sheet metal services throughout Delta and the Lower Mainland.
+              Specializing in custom ductwork fabrication, sheet metal installation, and precision metalwork 
+              for residential, commercial, and industrial HVAC systems throughout Delta and the Lower Mainland.
             </p>
           </div>
 
