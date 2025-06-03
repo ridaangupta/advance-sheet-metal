@@ -92,8 +92,8 @@ const About = () => {
               About Advance Sheet Metal
             </h1>
             <p className="text-xl md:text-2xl text-gray-100 mb-8">
-              Serving the Lower Mainland with professional HVAC services since 1995. 
-              Family-owned, locally operated, and committed to excellence.
+              Serving the Lower Mainland with professional HVAC sheet metal services since 1981. 
+              Family-owned, locally operated, and committed to excellence in commercial metalwork.
             </p>
           </div>
         </div>
@@ -109,21 +109,27 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  Founded in 1995 by Mike Johnson, Advance Sheet Metal Limited began as a small 
-                  family business with a simple mission: provide reliable, professional HVAC 
-                  services to the growing communities of Delta and the Lower Mainland.
+                  Founded in 1981, Advance Sheet Metal Limited began as a small business 
+                  with a team of experienced sheet metal experts who shared a passion for 
+                  precision craftsmanship and quality workmanship. What started as a modest 
+                  operation has grown steadily over the past 43 years into one of the Lower 
+                  Mainland's most trusted commercial HVAC sheet metal specialists.
                 </p>
                 <p>
-                  Over the past 25+ years, we've built our reputation on quality workmanship, 
-                  honest service, and treating every customer like family. What started as a 
-                  one-man operation has grown into a trusted team of certified professionals 
-                  serving hundreds of satisfied customers throughout Metro Vancouver.
+                  Our expertise lies in the complex world of commercial HVAC sheet metal 
+                  fabrication and installation. We've built our reputation serving diverse 
+                  sectors including hospitals where precision and reliability are critical, 
+                  elementary schools requiring safe and efficient ventilation systems, 
+                  automotive dealerships with unique HVAC challenges, and large-scale 
+                  warehouses demanding robust industrial solutions.
                 </p>
                 <p>
-                  Today, we continue to honor our founding values while embracing new technologies 
-                  and sustainable practices that benefit our customers and our community. Our 
-                  commitment to excellence has made us one of the most trusted HVAC contractors 
-                  in the Lower Mainland.
+                  Through four decades of continuous growth, we've maintained our commitment 
+                  to the core values that founded our company: superior craftsmanship, 
+                  innovative problem-solving, and personalized service. Our experienced team 
+                  combines traditional metalworking expertise with modern fabrication 
+                  techniques, ensuring every project meets the highest standards of quality 
+                  and durability that our commercial clients depend on.
                 </p>
               </div>
             </div>
@@ -133,29 +139,29 @@ const About = () => {
                 <div className="flex items-center space-x-3">
                   <Calendar className="w-6 h-6 text-gray-800" />
                   <div>
-                    <div className="font-semibold">Established 1995</div>
-                    <div className="text-sm text-gray-600">25+ years serving the community</div>
+                    <div className="font-semibold">Established 1981</div>
+                    <div className="text-sm text-gray-600">43+ years of sheet metal expertise</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Users className="w-6 h-6 text-gray-800" />
                   <div>
                     <div className="font-semibold">1000+ Projects</div>
-                    <div className="text-sm text-gray-600">Residential and commercial</div>
+                    <div className="text-sm text-gray-600">Commercial and institutional</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Map className="w-6 h-6 text-gray-800" />
                   <div>
                     <div className="font-semibold">Lower Mainland</div>
-                    <div className="text-sm text-gray-600">Local experts you can trust</div>
+                    <div className="text-sm text-gray-600">Local commercial HVAC experts</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-6 h-6 text-gray-800" />
                   <div>
-                    <div className="font-semibold">Professional Service</div>
-                    <div className="text-sm text-gray-600">Available when you need us</div>
+                    <div className="font-semibold">Specialized Service</div>
+                    <div className="text-sm text-gray-600">Hospitals, schools, dealerships, warehouses</div>
                   </div>
                 </div>
               </div>
