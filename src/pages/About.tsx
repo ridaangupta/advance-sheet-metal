@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -272,33 +271,6 @@ const About = () => {
                   <h3 className="font-semibold text-gray-900">{cert}</h3>
                 </div>
               ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Community Commitment */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="bg-gray-100 h-64 rounded-lg bg-cover bg-center" 
-                 style={{ backgroundImage: `url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop)` }}></div>
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Community Commitment
-              </h2>
-              <p className="text-gray-700 mb-6">
-                As proud members of the Delta community, we believe in giving back. We support 
-                local sports teams, participate in community events, and provide professional services 
-                during extreme weather events.
-              </p>
-              <p className="text-gray-700 mb-6">
-                Our commitment extends beyond just HVAC services – we're your neighbors, and we're 
-                invested in the comfort and well-being of our entire community.
-              </p>
-              <Button asChild className="bg-gray-800 hover:bg-gray-900">
-                <Link to="/contact">Join Our Community of Satisfied Customers</Link>
-              </Button>
             </div>
           </div>
         </div>
