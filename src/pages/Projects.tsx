@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -102,60 +103,6 @@ const Projects = () => {
                 </CardHeader>
               </Card>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Case Study Highlight */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Featured Case Study
-              </h2>
-              <p className="text-xl text-gray-600">
-                Deep dive into one of our most challenging and successful projects.
-              </p>
-            </div>
-
-            <Card className="overflow-hidden">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="h-64 lg:h-auto bg-gray-200 bg-cover bg-center" 
-                     style={{ backgroundImage: `url(https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop)` }}></div>
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Delta Community Center HVAC Retrofit
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    Complete HVAC system upgrade for a 30-year-old community center, 
-                    replacing outdated equipment with modern, energy-efficient systems 
-                    while maintaining operations throughout the project.
-                  </p>
-                  
-                  <div className="grid grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Challenge</h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>• Aging infrastructure</li>
-                        <li>• Minimal downtime required</li>
-                        <li>• Budget constraints</li>
-                        <li>• Complex scheduling</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Results</h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>• 50% energy reduction</li>
-                        <li>• Improved air quality</li>
-                        <li>• Zero downtime</li>
-                        <li>• On-time completion</li>
-                      </ul>
-                    </div>
-                  </div>
-                </CardContent>
-              </div>
-            </Card>
           </div>
         </div>
       </section>
