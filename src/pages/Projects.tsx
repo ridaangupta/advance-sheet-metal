@@ -5,68 +5,77 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
-  const [activeFilter, setActiveFilter] = useState("all");
-
   const projects = [
     {
-      title: "Commercial Office Building HVAC",
-      category: "commercial",
-      location: "Richmond, BC",
-      description: "Complete HVAC system installation for a 50,000 sq ft office complex including rooftop units, ductwork, and controls.",
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop",
-      details: ["50,000 sq ft coverage", "Energy-efficient design", "Smart building integration", "3-month timeline"]
+      title: "Club Kitchen",
+      address: "988 Expo Boulevard, Vancouver",
+      image: "https://retailinsider.b-cdn.net/wp-content/uploads/2023/05/IMG_7135-scaled.jpg"
     },
     {
-      title: "Residential Heat Pump Installation",
-      category: "residential",
-      location: "Delta, BC",
-      description: "Modern heat pump system replacement in family home, improving energy efficiency by 40%.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop",
-      details: ["40% energy savings", "Quiet operation", "Smart thermostat", "1-day installation"]
+      title: "Panorama Office Building",
+      address: "15330 54 Ave, Surrey",
+      image: "https://metriccivil.ca/wp-content/uploads/2022/05/Prado.jpg"
     },
     {
-      title: "Industrial Ventilation System",
-      category: "industrial",
-      location: "Surrey, BC",
-      description: "Custom ventilation system for manufacturing facility with specialized air filtration requirements.",
-      image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=600&h=400&fit=crop",
-      details: ["Custom fabrication", "HEPA filtration", "Code compliance", "Safety integration"]
+      title: "Openroad Honda Burnaby",
+      address: "5744 Byrne Road, Burnaby",
+      image: "https://prod-web-cms-images.s3-us-west-2.amazonaws.com/649d1a6e-e689-4795-a9d6-e47f8555b221/HONBU1988_Lightened.jpg"
     },
     {
-      title: "Restaurant Kitchen Exhaust",
-      category: "commercial",
-      location: "Vancouver, BC",
-      description: "Complete kitchen exhaust system installation for busy downtown restaurant.",
-      image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=600&h=400&fit=crop",
-      details: ["Commercial grade", "Fire suppression ready", "City permits", "Health code compliant"]
+      title: "Openroad Porsche Richmond",
+      address: "13171 Smallwood Place, Richmond",
+      image: "https://canadianautodealer.ca/wp-content/uploads/2022/12/4-OpenRoad-and-Dilawri-open-flagship-Porsche-Centre-Richmond-1200.jpg"
     },
     {
-      title: "Townhouse Complex HVAC",
-      category: "residential",
-      location: "Burnaby, BC",
-      description: "Multi-unit residential HVAC installation for new townhouse development.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop",
-      details: ["12 unit complex", "Individual controls", "Energy Star rated", "2-week completion"]
+      title: "E15",
+      address: "322 East 15 Avenue, Vancouver",
+      image: "https://vancouverpresales.com/wp-content/uploads/2021/05/1616442316-V2_E15_Streetscape_Full_blockC.jpeg"
     },
     {
-      title: "Warehouse Climate Control",
-      category: "industrial",
-      location: "Richmond, BC",
-      description: "Large-scale climate control system for temperature-sensitive warehouse storage.",
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop",
-      details: ["100,000 sq ft", "Precise temperature control", "Humidity management", "24/7 monitoring"]
+      title: "Burnaby Alliance Church",
+      address: "8585 Armstrong Ave., Burnaby",
+      image: "https://dq5pwpg1q8ru0.cloudfront.net/2024/01/20/19/54/53/d6191c94-5e0b-494a-8ace-2890c48296f7/BAC2-splash.jpg"
+    },
+    {
+      title: "Tatalu Elementary School",
+      address: "1970 165A Street, Surrey",
+      image: "https://media.surreyschools.ca/media/Default/pgg/5/ta'talu-gallery-1.jpg"
+    },
+    {
+      title: "Century City Tower",
+      address: "13573 98A Avenue, Surrey",
+      image: "https://bluecity.ca/wp-content/uploads/2022/11/locale-hero.jpg"
+    },
+    {
+      title: "Transcold Distribution",
+      address: "10895 Scott Road, Surrey",
+      image: "https://media.licdn.com/dms/image/v2/D5610AQHPBJQ7F_8_Hw/image-shrink_800/B56ZWQrmiTHoAc-/0/1741889105055?e=2147483647&v=beta&t=zWnTbLwC7BPnyD41bfyUEz-gpFyJnIDMV4DrsN04hno"
+    },
+    {
+      title: "Wayfair",
+      address: "8011 Zylmans Way, Richmond",
+      image: "https://omicronaec.com/wp-content/uploads/2024/04/23-08-02_Omicron_Richmond-Industrial_Wayfair_046-scaled.jpg"
+    },
+    {
+      title: "Oakridge Park",
+      address: "650 West 41ST, Vancouver",
+      image: "https://oakridgepark.com/wp-content/uploads/2021/08/cultural-park.jpg"
+    },
+    {
+      title: "Sobeys",
+      address: "7664 80TH Ave, Delta",
+      image: "https://www.vmcdn.ca/f/files/shared/feeds/cp/2024/06/3ded64b5-3793-41bf-aa82-ee57a143b714.jpg"
+    },
+    {
+      title: "UBC Food and Beverage Innovation Centre",
+      address: "2220 East Mall, Vancouver",
+      image: "https://ubcproperties.com/wp-content/uploads/2023/08/exterior2_54020058795_o-1-1-scaled.jpg"
+    },
+    {
+      title: "Snokomish Elementary School",
+      address: "14778 58B Ave, Surrey",
+      image: "https://media.surreyschools.ca/media/Default/medialib/snokomish-1920x1080.bde523181545.jpg"
     }
-  ];
-
-  const filteredProjects = activeFilter === "all" 
-    ? projects 
-    : projects.filter(project => project.category === activeFilter);
-
-  const filters = [
-    { id: "all", label: "All Projects" },
-    { id: "residential", label: "Residential" },
-    { id: "commercial", label: "Commercial" },
-    { id: "industrial", label: "Industrial" }
   ];
 
   return (
@@ -85,52 +94,18 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Filter Navigation */}
-      <section className="py-8 bg-gray-50 sticky top-20 z-40">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-4">
-            {filters.map((filter) => (
-              <Button
-                key={filter.id}
-                variant={activeFilter === filter.id ? "default" : "outline"}
-                onClick={() => setActiveFilter(filter.id)}
-                className={activeFilter === filter.id ? "bg-gray-800 hover:bg-gray-900" : ""}
-              >
-                {filter.label}
-              </Button>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Projects Grid */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.map((project, index) => (
+            {projects.map((project, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="h-48 bg-gray-200 bg-cover bg-center" 
                      style={{ backgroundImage: `url(${project.image})` }}></div>
                 <CardHeader>
-                  <div className="flex justify-between items-start mb-2">
-                    <span className="inline-block px-3 py-1 text-xs font-semibold text-gray-800 bg-gray-200 rounded-full capitalize">
-                      {project.category}
-                    </span>
-                  </div>
                   <CardTitle className="text-xl">{project.title}</CardTitle>
-                  <p className="text-sm text-gray-500">{project.location}</p>
+                  <p className="text-sm text-gray-500">{project.address}</p>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">{project.description}</p>
-                  <ul className="space-y-1 mb-6">
-                    {project.details.map((detail, detailIndex) => (
-                      <li key={detailIndex} className="flex items-center space-x-2 text-sm">
-                        <div className="w-1.5 h-1.5 bg-gray-800 rounded-full"></div>
-                        <span className="text-gray-700">{detail}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
               </Card>
             ))}
           </div>
