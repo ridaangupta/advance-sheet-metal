@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -35,11 +34,6 @@ const Projects = () => {
       title: "Burnaby Alliance Church",
       address: "8585 Armstrong Ave., Burnaby",
       image: "https://dq5pwpg1q8ru0.cloudfront.net/2024/01/20/19/54/53/d6191c94-5e0b-494a-8ace-2890c48296f7/BAC2-splash.jpg"
-    },
-    {
-      title: "Tatalu Elementary School",
-      address: "1970 165A Street, Surrey",
-      image: "https://media.surreyschools.ca/media/Default/pgg/5/ta'talu-gallery-1.jpg"
     },
     {
       title: "Century City Tower",
