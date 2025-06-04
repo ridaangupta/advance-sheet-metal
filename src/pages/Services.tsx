@@ -5,76 +5,42 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Calendar, Users, Map } from "lucide-react";
 
 const Services = () => {
-  const projects = [
+  const services = [
     {
-      name: "Club Kitchen",
-      address: "988 Expo Boulevard, Vancouver",
-      image: "https://retailinsider.b-cdn.net/wp-content/uploads/2023/05/IMG_7135-scaled.jpg"
+      title: "Custom Ductwork Fabrication",
+      description: "Precision-engineered ductwork designed and fabricated in our shop to meet your exact specifications and project requirements.",
+      features: ["Custom design solutions", "Precision fabrication", "Quality materials", "Code compliant"],
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop"
     },
     {
-      name: "Panorama Office Building",
-      address: "15330 54 Ave, Surrey",
-      image: "https://metriccivil.ca/wp-content/uploads/2022/05/Prado.jpg"
+      title: "Sheet Metal Installation",
+      description: "Professional installation of custom sheet metal components for commercial, industrial, and residential HVAC systems.",
+      features: ["Expert installation", "Proper sealing", "System integration", "Quality workmanship"],
+      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop"
     },
     {
-      name: "Openroad Honda Burnaby",
-      address: "5744 Byrne Road, Burnaby",
-      image: "https://prod-web-cms-images.s3-us-west-2.amazonaws.com/649d1a6e-e689-4795-a9d6-e47f8555b221/HONBU1988_Lightened.jpg"
+      title: "Ventilation Systems",
+      description: "Complete ventilation solutions including exhaust systems, makeup air units, and specialized ventilation for industrial applications.",
+      features: ["Exhaust systems", "Makeup air units", "Industrial ventilation", "Custom solutions"],
+      image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=600&h=400&fit=crop"
     },
     {
-      name: "Openroad Porsche Richmond",
-      address: "13171 Smallwood Place, Richmond",
-      image: "https://canadianautodealer.ca/wp-content/uploads/2022/12/4-OpenRoad-and-Dilawri-open-flagship-Porsche-Centre-Richmond-1200.jpg"
+      title: "Ductwork Repair & Modification",
+      description: "Professional repair and modification services for existing ductwork systems to improve efficiency and performance.",
+      features: ["System repairs", "Efficiency improvements", "Modifications", "Maintenance services"],
+      image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=600&h=400&fit=crop"
     },
     {
-      name: "E15",
-      address: "322 East 15 Avenue, Vancouver",
-      image: "https://vancouverpresales.com/wp-content/uploads/2021/05/1616442316-V2_E15_Streetscape_Full_blockC.jpeg"
+      title: "Commercial Kitchen Exhaust",
+      description: "Specialized kitchen exhaust systems and ductwork for restaurants and commercial food service operations.",
+      features: ["Kitchen exhaust hoods", "Grease duct systems", "Fire suppression ready", "Health code compliant"],
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop"
     },
     {
-      name: "Burnaby Alliance Church",
-      address: "8585 Armstrong Ave., Burnaby",
-      image: "https://dq5pwpg1q8ru0.cloudfront.net/2024/01/20/19/54/53/d6191c94-5e0b-494a-8ace-2890c48296f7/BAC2-splash.jpg"
-    },
-    {
-      name: "Tatalu Elementary School",
-      address: "1970 165A Street, Surrey",
-      image: "https://media.surreyschools.ca/media/Default/pgg/5/ta'talu-gallery-1.jpg"
-    },
-    {
-      name: "Century City Tower",
-      address: "13573 98A Avenue, Surrey",
-      image: "https://bluecity.ca/wp-content/uploads/2022/11/locale-hero.jpg"
-    },
-    {
-      name: "Transcold Distribution",
-      address: "10895 Scott Road, Surrey",
-      image: "https://media.licdn.com/dms/image/v2/D5610AQHPBJQ7F_8_Hw/image-shrink_800/B56ZWQrmiTHoAc-/0/1741889105055?e=2147483647&v=beta&t=zWnTbLwC7BPnyD41bfyUEz-gpFyJnIDMV4DrsN04hno"
-    },
-    {
-      name: "Wayfair",
-      address: "8011 Zylmans Way, Richmond",
-      image: "https://omicronaec.com/wp-content/uploads/2024/04/23-08-02_Omicron_Richmond-Industrial_Wayfair_046-scaled.jpg"
-    },
-    {
-      name: "Oakridge Park",
-      address: "650 West 41ST, Vancouver",
-      image: "https://oakridgepark.com/wp-content/uploads/2021/08/cultural-park.jpg"
-    },
-    {
-      name: "Sobeys",
-      address: "7664 80TH Ave, Delta",
-      image: "https://www.vmcdn.ca/f/files/shared/feeds/cp/2024/06/3ded64b5-3793-41bf-aa82-ee57a143b714.jpg"
-    },
-    {
-      name: "UBC Food and Beverage Innovation Centre",
-      address: "2220 East Mall, Vancouver",
-      image: "https://ubcproperties.com/wp-content/uploads/2023/08/exterior2_54020058795_o-1-1-scaled.jpg"
-    },
-    {
-      name: "Snokomish Elementary School",
-      address: "14778 58B Ave, Surrey",
-      image: "https://media.surreyschools.ca/media/Default/medialib/snokomish-1920x1080.bde523181545.jpg"
+      title: "Industrial Sheet Metal",
+      description: "Heavy-duty sheet metal fabrication and installation for industrial facilities, including specialized ventilation and process equipment.",
+      features: ["Heavy-duty construction", "Industrial grade materials", "Process ventilation", "Custom fabrication"],
+      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop"
     }
   ];
 
@@ -97,30 +63,38 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Projects Grid */}
+      {/* Services Grid */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Recent Projects
+              Our Specializations
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              View our completed HVAC sheet metal installations across the Lower Mainland. Each project showcases our commitment to quality craftsmanship and professional service.
+              From precision ductwork fabrication to complete sheet metal installations, we provide specialized HVAC metalwork solutions with expert craftsmanship and reliable service.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {services.map((service, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="h-48 bg-gray-200 bg-cover bg-center" 
-                     style={{ backgroundImage: `url(${project.image})` }}></div>
+                     style={{ backgroundImage: `url(${service.image})` }}></div>
                 <CardHeader>
-                  <CardTitle className="text-xl">{project.name}</CardTitle>
+                  <CardTitle className="text-2xl">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 mb-4">{project.address}</p>
+                  <p className="text-gray-600 mb-4">{service.description}</p>
+                  <ul className="space-y-2 mb-6">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-gray-800 rounded-full"></div>
+                        <span className="text-gray-700">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
                   <Button asChild variant="outline" className="w-full">
-                    <Link to="/contact">Get Quote for Similar Project</Link>
+                    <Link to="/contact">Get Quote</Link>
                   </Button>
                 </CardContent>
               </Card>
