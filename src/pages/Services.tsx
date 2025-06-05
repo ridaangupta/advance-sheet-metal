@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,45 +5,42 @@ import { Phone, Calendar, Users, Map } from "lucide-react";
 import { useEffect } from "react";
 
 const Services = () => {
-  // Add cache-busting timestamp to force fresh image loads
-  const timestamp = Date.now();
-  
   const services = [
     {
       title: "Custom Ductwork Fabrication",
       description: "Precision-engineered ductwork designed and fabricated in our shop to meet your exact specifications and project requirements.",
       features: ["Custom design solutions", "Precision fabrication", "Quality materials", "Code compliant"],
-      image: `/services/custom-ductwork.jpg?v=${timestamp}`
+      image: "/services/custom-ductwork.jpg"
     },
     {
       title: "Sheet Metal Installation",
       description: "Professional installation of custom sheet metal components for commercial, industrial, and residential HVAC systems.",
       features: ["Expert installation", "Proper sealing", "System integration", "Quality workmanship"],
-      image: `/services/sheet-metal-install.jpg?v=${timestamp}`
+      image: "/services/sheet-metal-install.jpg"
     },
     {
       title: "Ventilation Systems",
       description: "Complete ventilation solutions including exhaust systems, makeup air units, and specialized ventilation for industrial applications.",
       features: ["Exhaust systems", "Makeup air units", "Industrial ventilation", "Custom solutions"],
-      image: `/services/ventilation-systems.jpg?v=${timestamp}`
+      image: "/services/ventilation-systems.jpg"
     },
     {
       title: "Ductwork Repair & Modification",
       description: "Professional repair and modification services for existing ductwork systems to improve efficiency and performance.",
       features: ["System repairs", "Efficiency improvements", "Modifications", "Maintenance services"],
-      image: `/services/ductwork-repair.jpg?v=${timestamp}`
+      image: "/services/ductwork-repair.jpg"
     },
     {
       title: "Commercial Kitchen Exhaust",
       description: "Specialized kitchen exhaust systems and ductwork for restaurants and commercial food service operations.",
       features: ["Kitchen exhaust hoods", "Grease duct systems", "Fire suppression ready", "Health code compliant"],
-      image: `/services/kitchen-exhaust.jpg?v=${timestamp}`
+      image: "/services/kitchen-exhaust.jpg"
     },
     {
       title: "Industrial Sheet Metal",
       description: "Heavy-duty sheet metal fabrication and installation for industrial facilities, including specialized ventilation and process equipment.",
       features: ["Heavy-duty construction", "Industrial grade materials", "Process ventilation", "Custom fabrication"],
-      image: `/services/industrial-metal.jpg?v=${timestamp}`
+      image: "/services/industrial-metal.jpg"
     }
   ];
 
@@ -102,19 +98,6 @@ const Services = () => {
                     alt={`${service.title} - Professional HVAC sheet metal work`}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                     loading={index < 2 ? "eager" : "lazy"}
-                    onError={(e) => {
-                      console.log(`Failed to load image: ${service.image}`);
-                      // Fallback to a more reliable placeholder
-                      e.currentTarget.src = `https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop&q=80`;
-                    }}
-                    onLoad={() => {
-                      console.log(`Successfully loaded: ${service.image}`);
-                    }}
-                    style={{ 
-                      width: '100%', 
-                      height: '100%',
-                      objectFit: 'cover'
-                    }}
                   />
                 </div>
                 <CardHeader>
