@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Calendar, Users, Map } from "lucide-react";
+import { useEffect } from "react";
 
 const Services = () => {
   const services = [
@@ -10,39 +11,53 @@ const Services = () => {
       title: "Custom Ductwork Fabrication",
       description: "Precision-engineered ductwork designed and fabricated in our shop to meet your exact specifications and project requirements.",
       features: ["Custom design solutions", "Precision fabrication", "Quality materials", "Code compliant"],
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop"
+      image: "/services/custom-ductwork.jpg"
     },
     {
       title: "Sheet Metal Installation",
       description: "Professional installation of custom sheet metal components for commercial, industrial, and residential HVAC systems.",
       features: ["Expert installation", "Proper sealing", "System integration", "Quality workmanship"],
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop"
+      image: "/services/sheet-metal-install.jpg"
     },
     {
       title: "Ventilation Systems",
       description: "Complete ventilation solutions including exhaust systems, makeup air units, and specialized ventilation for industrial applications.",
       features: ["Exhaust systems", "Makeup air units", "Industrial ventilation", "Custom solutions"],
-      image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=600&h=400&fit=crop"
+      image: "/services/ventilation-systems.jpg"
     },
     {
       title: "Ductwork Repair & Modification",
       description: "Professional repair and modification services for existing ductwork systems to improve efficiency and performance.",
       features: ["System repairs", "Efficiency improvements", "Modifications", "Maintenance services"],
-      image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=600&h=400&fit=crop"
+      image: "/services/ductwork-repair.jpg"
     },
     {
       title: "Commercial Kitchen Exhaust",
       description: "Specialized kitchen exhaust systems and ductwork for restaurants and commercial food service operations.",
       features: ["Kitchen exhaust hoods", "Grease duct systems", "Fire suppression ready", "Health code compliant"],
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop"
+      image: "/services/kitchen-exhaust.jpg"
     },
     {
       title: "Industrial Sheet Metal",
       description: "Heavy-duty sheet metal fabrication and installation for industrial facilities, including specialized ventilation and process equipment.",
       features: ["Heavy-duty construction", "Industrial grade materials", "Process ventilation", "Custom fabrication"],
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop"
+      image: "/services/industrial-metal.jpg"
     }
   ];
+
+  // Preload critical images for better performance
+  useEffect(() => {
+    services.forEach((service, index) => {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = service.image;
+      // Preload only the first 3 images immediately, others can be lazy loaded
+      if (index < 3) {
+        document.head.appendChild(link);
+      }
+    });
+  }, []);
 
   return (
     <div className="min-h-screen">
@@ -78,8 +93,22 @@ const Services = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-gray-200 bg-cover bg-center" 
-                     style={{ backgroundImage: `url(${service.image})` }}></div>
+                <div className="relative h-48 bg-gray-200 overflow-hidden">
+                  <img 
+                    src={service.image}
+                    alt={`${service.title} - Professional HVAC sheet metal work`}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    loading={index < 2 ? "eager" : "lazy"}
+                    onError={(e) => {
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop";
+                    }}
+                    style={{ 
+                      width: '100%', 
+                      height: '100%',
+                      objectFit: 'cover'
+                    }}
+                  />
+                </div>
                 <CardHeader>
                   <CardTitle className="text-2xl">{service.title}</CardTitle>
                 </CardHeader>
