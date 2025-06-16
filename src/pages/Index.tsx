@@ -1,26 +1,39 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Users, Calendar, Map, Mail } from "lucide-react";
+import { useEffect } from "react";
 
 const Index = () => {
   const services = [
     {
       title: "Custom Ductwork Fabrication",
       description: "Precision-engineered ductwork and ventilation systems designed and fabricated to your exact specifications.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop"
+      image: "/custom-ductwork.png"
     },
     {
       title: "Sheet Metal Installation",
       description: "Professional installation of custom sheet metal solutions for commercial and industrial applications.",
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop"
+      image: "/sheet-metal-install.png"
     },
     {
       title: "HVAC Ductwork Services",
       description: "Complete ductwork solutions including design, fabrication, installation, and maintenance services.",
-      image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=400&h=300&fit=crop"
+      image: "/ventilation-systems.png"
     }
   ];
+
+  // Preload only the first 2 critical images for better performance
+  useEffect(() => {
+    services.slice(0, 2).forEach((service) => {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = service.image;
+      document.head.appendChild(link);
+    });
+  }, []);
 
   const testimonials = [
     {
@@ -108,8 +121,14 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card key={index} className="service-card overflow-hidden">
-                <div className="h-48 bg-gray-200 bg-cover bg-center" 
-                     style={{ backgroundImage: `url(${service.image})` }}></div>
+                <div className="h-48 bg-gray-200 overflow-hidden">
+                  <img 
+                    src={service.image}
+                    alt={`${service.title} - Professional HVAC sheet metal work`}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    loading={index < 2 ? "eager" : "lazy"}
+                  />
+                </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
