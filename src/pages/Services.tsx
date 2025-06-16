@@ -11,37 +11,37 @@ const Services = () => {
       title: "Custom Ductwork Fabrication",
       description: "Precision-engineered ductwork designed and fabricated in our shop to meet your exact specifications and project requirements.",
       features: ["Custom design solutions", "Precision fabrication", "Quality materials", "Code compliant"],
-      image: "/services/custom-ductwork.png"
+      image: "/custom-ductwork.png"
     },
     {
       title: "Sheet Metal Installation",
       description: "Professional installation of custom sheet metal components for commercial, industrial, and residential HVAC systems.",
       features: ["Expert installation", "Proper sealing", "System integration", "Quality workmanship"],
-      image: "/services/sheet-metal-install.png"
+      image: "/sheet-metal-install.png"
     },
     {
       title: "Ventilation Systems",
       description: "Complete ventilation solutions including exhaust systems, makeup air units, and specialized ventilation for industrial applications.",
       features: ["Exhaust systems", "Makeup air units", "Industrial ventilation", "Custom solutions"],
-      image: "/services/ventilation-systems.png"
+      image: "/ventilation-systems.png"
     },
     {
       title: "Ductwork Repair & Modification",
       description: "Professional repair and modification services for existing ductwork systems to improve efficiency and performance.",
       features: ["System repairs", "Efficiency improvements", "Modifications", "Maintenance services"],
-      image: "/services/ductwork-repair.png"
+      image: "/ductwork-repair.png"
     },
     {
       title: "Commercial Kitchen Exhaust",
       description: "Specialized kitchen exhaust systems and ductwork for restaurants and commercial food service operations.",
       features: ["Kitchen exhaust hoods", "Grease duct systems", "Fire suppression ready", "Health code compliant"],
-      image: "/services/kitchen-exhaust.png"
+      image: "/kitchen-exhaust.png"
     },
     {
       title: "Industrial Sheet Metal",
       description: "Heavy-duty sheet metal fabrication and installation for industrial facilities, including specialized ventilation and process equipment.",
       features: ["Heavy-duty construction", "Industrial grade materials", "Process ventilation", "Custom fabrication"],
-      image: "/services/industrial-metal.png"
+      image: "/industrial-metal.png"
     }
   ];
 
