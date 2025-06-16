@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -45,17 +44,14 @@ const Services = () => {
     }
   ];
 
-  // Preload critical images for better performance
+  // Preload only the first 2 critical images for better performance
   useEffect(() => {
-    services.forEach((service, index) => {
+    services.slice(0, 2).forEach((service) => {
       const link = document.createElement('link');
       link.rel = 'preload';
       link.as = 'image';
       link.href = service.image;
-      // Preload only the first 3 images immediately, others can be lazy loaded
-      if (index < 3) {
-        document.head.appendChild(link);
-      }
+      document.head.appendChild(link);
     });
   }, []);
 
