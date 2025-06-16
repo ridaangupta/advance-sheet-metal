@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Mail, Map, Calendar, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import InteractiveMap from "@/components/Map";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -298,14 +299,7 @@ const Contact = () => {
           </div>
           
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
-              <div className="text-center text-gray-600">
-                <Map className="w-16 h-16 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Interactive Map</h3>
-                <p>1546 Derwent Way # 311C, Delta, BC V4K 3N5</p>
-                <p className="text-sm mt-2">Map integration would be added here</p>
-              </div>
-            </div>
+            <InteractiveMap />
           </div>
         </div>
       </section>
