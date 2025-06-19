@@ -123,12 +123,11 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Serving the Lower Mainland
+                We Serve the Lower Mainland
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Based in Delta, we proudly serve residential and commercial clients throughout 
-                Metro Vancouver. Our local expertise means we understand the unique climate 
-                challenges and building requirements of our region.
+                Based in Delta, we provide HVAC sheet metal services to homes and businesses 
+                across Metro Vancouver. We know the local climate and building needs.
               </p>
               <div className="grid grid-cols-2 gap-4 text-gray-700">
                 <div className="flex items-center space-x-2">
@@ -158,13 +157,13 @@ const Index = () => {
               </div>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Quick Contact</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Us</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Phone className="w-6 h-6 text-gray-800" />
                   <div>
                     <div className="font-semibold">(604) 540-4955</div>
-                    <div className="text-sm text-gray-600">Call for Service</div>
+                    <div className="text-sm text-gray-600">Call for service</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -183,7 +182,7 @@ const Index = () => {
                 </div>
               </div>
               <Button asChild className="w-full mt-6 bg-gray-800 hover:bg-gray-900">
-                <Link to="/contact">Request Service</Link>
+                <Link to="/contact">Get Quote</Link>
               </Button>
             </div>
           </div>
