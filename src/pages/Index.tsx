@@ -3,29 +3,24 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Users, Calendar, Map, Mail } from "lucide-react";
 import { useEffect } from "react";
-
 const Index = () => {
-  const services = [
-    {
-      title: "Custom Ductwork Fabrication",
-      description: "Precision-engineered ductwork and ventilation systems designed and fabricated to your exact specifications.",
-      image: "/custom-ductwork.png"
-    },
-    {
-      title: "Sheet Metal Installation",
-      description: "Professional installation of custom sheet metal solutions for commercial and industrial applications.",
-      image: "/sheet-metal-install.png"
-    },
-    {
-      title: "HVAC Ductwork Services",
-      description: "Complete ductwork solutions including design, fabrication, installation, and maintenance services.",
-      image: "/ventilation-systems.png"
-    }
-  ];
+  const services = [{
+    title: "Custom Ductwork Fabrication",
+    description: "Precision-engineered ductwork and ventilation systems designed and fabricated to your exact specifications.",
+    image: "/custom-ductwork.png"
+  }, {
+    title: "Sheet Metal Installation",
+    description: "Professional installation of custom sheet metal solutions for commercial and industrial applications.",
+    image: "/sheet-metal-install.png"
+  }, {
+    title: "HVAC Ductwork Services",
+    description: "Complete ductwork solutions including design, fabrication, installation, and maintenance services.",
+    image: "/ventilation-systems.png"
+  }];
 
   // Preload only the first 2 critical images for better performance
   useEffect(() => {
-    services.slice(0, 2).forEach((service) => {
+    services.slice(0, 2).forEach(service => {
       const link = document.createElement('link');
       link.rel = 'preload';
       link.as = 'image';
@@ -33,27 +28,20 @@ const Index = () => {
       document.head.appendChild(link);
     });
   }, []);
-
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      location: "Delta, BC",
-      text: "Exceptional service! They installed our new HVAC system efficiently and professionally. Highly recommend for anyone in the Lower Mainland."
-    },
-    {
-      name: "Mike Chen",
-      location: "Richmond, BC",
-      text: "Called them for an emergency repair on a weekend. They came out quickly and fixed our heating system. Great customer service!"
-    },
-    {
-      name: "Lisa Thompson",
-      location: "Surrey, BC",
-      text: "Professional team that completed our commercial HVAC project on time and within budget. Will definitely use them again."
-    }
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const testimonials = [{
+    name: "Sarah Johnson",
+    location: "Delta, BC",
+    text: "Exceptional service! They installed our new HVAC system efficiently and professionally. Highly recommend for anyone in the Lower Mainland."
+  }, {
+    name: "Mike Chen",
+    location: "Richmond, BC",
+    text: "Called them for an emergency repair on a weekend. They came out quickly and fixed our heating system. Great customer service!"
+  }, {
+    name: "Lisa Thompson",
+    location: "Surrey, BC",
+    text: "Professional team that completed our commercial HVAC project on time and within budget. Will definitely use them again."
+  }];
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="hero-gradient text-white py-20">
         <div className="container mx-auto px-4">
@@ -61,9 +49,7 @@ const Index = () => {
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Delta's Leading <span className="text-gray-300">Sheet Metal</span> Specialists
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-100">
-              Transform your space with custom ductwork and premium HVAC sheet metal solutions!
-            </p>
+            <p className="text-xl md:text-2xl mb-8 text-gray-100">Custom ductwork and premium HVAC sheet metal solutions!</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-900 text-lg px-8 py-4">
                 <Link to="/contact">Get Free Estimate</Link>
@@ -93,15 +79,9 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="service-card overflow-hidden">
+            {services.map((service, index) => <Card key={index} className="service-card overflow-hidden">
                 <div className="h-48 bg-gray-200 overflow-hidden">
-                  <img 
-                    src={service.image}
-                    alt={`${service.title} - Professional HVAC sheet metal work`}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                    loading={index < 2 ? "eager" : "lazy"}
-                  />
+                  <img src={service.image} alt={`${service.title} - Professional HVAC sheet metal work`} className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading={index < 2 ? "eager" : "lazy"} />
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
@@ -110,8 +90,7 @@ const Index = () => {
                     <Link to="/services">Learn More</Link>
                   </Button>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -201,15 +180,13 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="p-6">
+            {testimonials.map((testimonial, index) => <Card key={index} className="p-6">
                 <CardContent className="p-0">
                   <div className="text-gray-600 mb-4 italic">"{testimonial.text}"</div>
                   <div className="font-semibold text-gray-900">{testimonial.name}</div>
                   <div className="text-sm text-gray-500">{testimonial.location}</div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -258,8 +235,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
