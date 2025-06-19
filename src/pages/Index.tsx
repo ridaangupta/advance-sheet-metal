@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -76,30 +75,6 @@ const Index = () => {
                   Call for Service
                 </a>
               </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Trust Indicators */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            <div className="slide-up">
-              <div className="text-3xl font-bold text-gray-800 mb-2">40+</div>
-              <div className="text-gray-700">Years Experience</div>
-            </div>
-            <div className="slide-up">
-              <div className="text-3xl font-bold text-gray-800 mb-2">1000+</div>
-              <div className="text-gray-700">Projects Completed</div>
-            </div>
-            <div className="slide-up">
-              <div className="text-3xl font-bold text-gray-800 mb-2">100%</div>
-              <div className="text-gray-700">Licensed & Insured</div>
-            </div>
-            <div className="slide-up">
-              <div className="text-3xl font-bold text-gray-800 mb-2">5★</div>
-              <div className="text-gray-700">Customer Rating</div>
             </div>
           </div>
         </div>
@@ -237,6 +212,30 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Indicators - Moved to bottom */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div className="slide-up">
+              <div className="text-3xl font-bold text-gray-800 mb-2">40+</div>
+              <div className="text-gray-700">Years Experience</div>
+            </div>
+            <div className="slide-up">
+              <div className="text-3xl font-bold text-gray-800 mb-2">1000+</div>
+              <div className="text-gray-700">Projects Completed</div>
+            </div>
+            <div className="slide-up">
+              <div className="text-3xl font-bold text-gray-800 mb-2">100%</div>
+              <div className="text-gray-700">Licensed & Insured</div>
+            </div>
+            <div className="slide-up">
+              <div className="text-3xl font-bold text-gray-800 mb-2">5★</div>
+              <div className="text-gray-700">Customer Rating</div>
+            </div>
           </div>
         </div>
       </section>
