@@ -24,11 +24,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 flex items-center justify-center">
+            <div className="w-16 h-16 flex items-center justify-center">
               <img 
                 src="/lovable-uploads/faf92a7b-f67b-4e87-b52f-6346f769737a.png" 
                 alt="Advance Sheet Metal" 
-                className="w-10 h-10 object-contain"
+                className="w-14 h-14 object-contain"
               />
             </div>
             <div className="hidden sm:block">
