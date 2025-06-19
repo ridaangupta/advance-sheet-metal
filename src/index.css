@@ -104,6 +104,11 @@
     animation: slideUp 0.8s ease-out forwards;
   }
 
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
