@@ -69,12 +69,11 @@ const ContactFormPopup = ({ isOpen, onClose }: ContactFormPopupProps) => {
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <Label htmlFor="popup-name">Full Name *</Label>
+            <Label htmlFor="popup-name">Full Name</Label>
             <Input
               id="popup-name"
               name="name"
               type="text"
-              required
               value={formData.name}
               onChange={handleInputChange}
               placeholder="Your full name"
@@ -83,24 +82,22 @@ const ContactFormPopup = ({ isOpen, onClose }: ContactFormPopupProps) => {
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <Label htmlFor="popup-email">Email *</Label>
+              <Label htmlFor="popup-email">Email</Label>
               <Input
                 id="popup-email"
                 name="email"
                 type="email"
-                required
                 value={formData.email}
                 onChange={handleInputChange}
                 placeholder="your@email.com"
               />
             </div>
             <div>
-              <Label htmlFor="popup-phone">Phone *</Label>
+              <Label htmlFor="popup-phone">Phone</Label>
               <Input
                 id="popup-phone"
                 name="phone"
                 type="tel"
-                required
                 value={formData.phone}
                 onChange={handleInputChange}
                 placeholder="(604) 555-0123"
@@ -109,7 +106,7 @@ const ContactFormPopup = ({ isOpen, onClose }: ContactFormPopupProps) => {
           </div>
 
           <div>
-            <Label htmlFor="popup-service">Service Needed *</Label>
+            <Label htmlFor="popup-service">Service Needed</Label>
             <Select onValueChange={(value) => handleSelectChange("serviceType", value)}>
               <SelectTrigger>
                 <SelectValue placeholder="Select service type" />
@@ -121,6 +118,7 @@ const ContactFormPopup = ({ isOpen, onClose }: ContactFormPopupProps) => {
                 <SelectItem value="upgrade">System Upgrade</SelectItem>
                 <SelectItem value="consultation">Energy Consultation</SelectItem>
                 <SelectItem value="emergency">Emergency Service</SelectItem>
+                <SelectItem value="other">Other</SelectItem>
               </SelectContent>
             </Select>
           </div>

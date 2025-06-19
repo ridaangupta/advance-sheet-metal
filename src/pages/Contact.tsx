@@ -104,24 +104,22 @@ const Contact = () => {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <Label htmlFor="name">Full Name *</Label>
+                        <Label htmlFor="name">Full Name</Label>
                         <Input
                           id="name"
                           name="name"
                           type="text"
-                          required
                           value={formData.name}
                           onChange={handleInputChange}
                           placeholder="Your full name"
                         />
                       </div>
                       <div>
-                        <Label htmlFor="phone">Phone Number *</Label>
+                        <Label htmlFor="phone">Phone Number</Label>
                         <Input
                           id="phone"
                           name="phone"
                           type="tel"
-                          required
                           value={formData.phone}
                           onChange={handleInputChange}
                           placeholder="(604) 555-0123"
@@ -130,12 +128,11 @@ const Contact = () => {
                     </div>
 
                     <div>
-                      <Label htmlFor="email">Email Address *</Label>
+                      <Label htmlFor="email">Email Address</Label>
                       <Input
                         id="email"
                         name="email"
                         type="email"
-                        required
                         value={formData.email}
                         onChange={handleInputChange}
                         placeholder="your.email@example.com"
@@ -144,7 +141,7 @@ const Contact = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <Label htmlFor="serviceType">Service Needed *</Label>
+                        <Label htmlFor="serviceType">Service Needed</Label>
                         <Select onValueChange={(value) => handleSelectChange("serviceType", value)}>
                           <SelectTrigger>
                             <SelectValue placeholder="Select service type" />
@@ -156,6 +153,7 @@ const Contact = () => {
                             <SelectItem value="upgrade">System Upgrade</SelectItem>
                             <SelectItem value="consultation">Energy Consultation</SelectItem>
                             <SelectItem value="emergency">Emergency Service</SelectItem>
+                            <SelectItem value="other">Other</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
@@ -176,7 +174,7 @@ const Contact = () => {
                     </div>
 
                     <div>
-                      <Label htmlFor="location">Service Location *</Label>
+                      <Label htmlFor="location">Service Location</Label>
                       <Select onValueChange={(value) => handleSelectChange("location", value)}>
                         <SelectTrigger>
                           <SelectValue placeholder="Select your city" />
