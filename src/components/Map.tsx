@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { supabase } from '@/integrations/supabase/client';
@@ -7,6 +7,7 @@ import { supabase } from '@/integrations/supabase/client';
 const Map = () => {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
+  const [isMapLoaded, setIsMapLoaded] = useState(false);
 
   useEffect(() => {
     const initializeMap = async () => {
@@ -21,8 +22,8 @@ const Map = () => {
           return;
         }
 
-        // Add a small delay to ensure page has loaded completely
-        await new Promise(resolve => setTimeout(resolve, 200));
+        // Longer delay to ensure page has fully stabilized
+        await new Promise(resolve => setTimeout(resolve, 400));
 
         // Initialize map
         mapboxgl.accessToken = data.token;
@@ -36,6 +37,7 @@ const Map = () => {
           center: businessLocation,
           zoom: 15,
           pitch: 45,
+          interactive: false, // Start non-interactive
         });
 
         // Add navigation controls
@@ -79,12 +81,29 @@ const Map = () => {
 
         // Show popup on marker hover
         marker.getElement().addEventListener('mouseenter', () => {
-          popup.addTo(map.current!);
+          if (map.current) {
+            popup.addTo(map.current);
+          }
         });
 
         // Map loaded event
         map.current.on('load', () => {
           console.log('Map loaded successfully');
+          setIsMapLoaded(true);
+          
+          // Enable interactivity after load
+          setTimeout(() => {
+            if (map.current) {
+              map.current.getCanvas().style.cursor = '';
+              map.current.boxZoom.enable();
+              map.current.scrollZoom.enable();
+              map.current.dragPan.enable();
+              map.current.dragRotate.enable();
+              map.current.keyboard.enable();
+              map.current.doubleClickZoom.enable();
+              map.current.touchZoomRotate.enable();
+            }
+          }, 200);
         });
 
       } catch (error) {
@@ -96,7 +115,16 @@ const Map = () => {
 
     // Cleanup
     return () => {
-      map.current?.remove();
+      if (map.current) {
+        // Proper cleanup with null checks
+        try {
+          map.current.remove();
+        } catch (error) {
+          console.warn('Error during map cleanup:', error);
+        } finally {
+          map.current = null;
+        }
+      }
     };
   }, []);
 
@@ -108,9 +136,16 @@ const Map = () => {
         tabIndex={-1}
         style={{ 
           outline: 'none',
-          scrollBehavior: 'auto'
+          scrollBehavior: 'auto',
+          visibility: isMapLoaded ? 'visible' : 'hidden',
+          pointerEvents: isMapLoaded ? 'auto' : 'none'
         }}
       />
+      {!isMapLoaded && (
+        <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">
+          <div className="text-gray-500">Loading map...</div>
+        </div>
+      )}
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent to-background/5 rounded-lg" />
     </div>
   );
