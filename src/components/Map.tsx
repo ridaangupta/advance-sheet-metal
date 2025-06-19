@@ -21,6 +21,9 @@ const Map = () => {
           return;
         }
 
+        // Add a small delay to ensure page has loaded completely
+        await new Promise(resolve => setTimeout(resolve, 200));
+
         // Initialize map
         mapboxgl.accessToken = data.token;
         
@@ -99,7 +102,15 @@ const Map = () => {
 
   return (
     <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-lg">
-      <div ref={mapContainer} className="absolute inset-0" />
+      <div 
+        ref={mapContainer} 
+        className="absolute inset-0" 
+        tabIndex={-1}
+        style={{ 
+          outline: 'none',
+          scrollBehavior: 'auto'
+        }}
+      />
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent to-background/5 rounded-lg" />
     </div>
   );
