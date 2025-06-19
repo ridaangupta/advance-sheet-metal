@@ -22,9 +22,6 @@ const Map = () => {
           return;
         }
 
-        // Longer delay to ensure page has fully stabilized
-        await new Promise(resolve => setTimeout(resolve, 400));
-
         // Initialize map
         mapboxgl.accessToken = data.token;
         
@@ -37,7 +34,6 @@ const Map = () => {
           center: businessLocation,
           zoom: 15,
           pitch: 45,
-          interactive: false, // Start non-interactive
         });
 
         // Add navigation controls
@@ -90,20 +86,6 @@ const Map = () => {
         map.current.on('load', () => {
           console.log('Map loaded successfully');
           setIsMapLoaded(true);
-          
-          // Enable interactivity after load
-          setTimeout(() => {
-            if (map.current) {
-              map.current.getCanvas().style.cursor = '';
-              map.current.boxZoom.enable();
-              map.current.scrollZoom.enable();
-              map.current.dragPan.enable();
-              map.current.dragRotate.enable();
-              map.current.keyboard.enable();
-              map.current.doubleClickZoom.enable();
-              map.current.touchZoomRotate.enable();
-            }
-          }, 200);
         });
 
       } catch (error) {
@@ -116,7 +98,6 @@ const Map = () => {
     // Cleanup
     return () => {
       if (map.current) {
-        // Proper cleanup with null checks
         try {
           map.current.remove();
         } catch (error) {
@@ -133,13 +114,6 @@ const Map = () => {
       <div 
         ref={mapContainer} 
         className="absolute inset-0" 
-        tabIndex={-1}
-        style={{ 
-          outline: 'none',
-          scrollBehavior: 'auto',
-          visibility: isMapLoaded ? 'visible' : 'hidden',
-          pointerEvents: isMapLoaded ? 'auto' : 'none'
-        }}
       />
       {!isMapLoaded && (
         <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">
