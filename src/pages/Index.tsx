@@ -47,9 +47,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Delta's Leading <span className="text-gray-300">Sheet Metal</span> Specialists
+              Leading <span className="text-gray-300">Sheet Metal</span> Specialists
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-100">Custom ductwork and premium HVAC sheet metal solutions!</p>
+            <p className="text-xl md:text-2xl mb-8 text-gray-100">Transform your space with custom ductwork and premium HVAC sheet metal solutions!</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-900 text-lg px-8 py-4">
                 <Link to="/contact">Get Free Estimate</Link>
