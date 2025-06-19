@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -62,8 +63,7 @@ const Index = () => {
               Delta's Leading <span className="text-gray-300">Sheet Metal</span> Specialists
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-100">
-              Professional HVAC sheet metal fabrication and custom ductwork solutions throughout the Lower Mainland. 
-              Licensed, insured, and specializing in precision metalwork for over 40 years.
+              We make custom ductwork and HVAC sheet metal for homes and businesses.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-900 text-lg px-8 py-4">
