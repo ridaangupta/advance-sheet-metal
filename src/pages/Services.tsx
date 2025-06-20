@@ -60,11 +60,11 @@ const Services = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative text-white py-20 overflow-hidden">
-        {/* Background Image */}
+        {/* Background Image - Industrial metalworking */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1581093458791-9f3c3250a33a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
           }}
         />
         {/* Overlay */}
@@ -134,11 +134,11 @@ const Services = () => {
 
       {/* Professional Service */}
       <section className="py-20 bg-gray-50 relative">
-        {/* Background Image */}
+        {/* Background Image - Manufacturing/Factory floor */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
           }}
         />
         <div className="container mx-auto px-4 relative z-10">

@@ -77,11 +77,11 @@ const Projects = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative text-white py-20 overflow-hidden">
-        {/* Background Image */}
+        {/* Background Image - Industrial factory */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
           }}
         />
         {/* Overlay */}
@@ -129,11 +129,11 @@ const Projects = () => {
 
       {/* Additional Hero Section */}
       <section className="py-20 bg-gray-50 relative">
-        {/* Background Image */}
+        {/* Background Image - Welding/metalwork */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1504307648460-6d8c921bbb92?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
@@ -151,11 +151,11 @@ const Projects = () => {
 
       {/* CTA Section */}
       <section className="py-20 bg-gray-800 text-white relative">
-        {/* Background Image */}
+        {/* Background Image - Industrial workspace */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1504307648324-b7ad1e1b8eed?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
           }}
         />
         <div className="container mx-auto px-4 text-center relative z-10">

@@ -12,11 +12,11 @@ const Contact = () => {
       
       {/* Contact Form & Info */}
       <section className="py-20 relative">
-        {/* Background Image */}
+        {/* Background Image - Metal workshop/fabrication */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1581093804475-577d72e38aa0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
@@ -36,11 +36,11 @@ const Contact = () => {
 
       {/* Additional Info Section */}
       <section className="py-20 bg-gray-50 relative">
-        {/* Background Image */}
+        {/* Background Image - Industrial metalwork */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1581093458791-9f3c3250a33a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
           }}
         />
         <div className="container mx-auto px-4 relative z-10">

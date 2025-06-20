@@ -103,11 +103,11 @@ const About = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative text-white py-20 overflow-hidden">
-        {/* Background Image */}
+        {/* Background Image - Metal fabrication workshop */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1582722916012-d4b5e2127b6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
           }}
         />
         {/* Overlay */}
@@ -162,11 +162,11 @@ const About = () => {
               </div>
             </div>
             <div className="relative animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              {/* Background Image */}
+              {/* Background Image - Industrial metal fabrication */}
               <div 
                 className="h-96 bg-cover bg-center bg-no-repeat rounded-lg"
                 style={{
-                  backgroundImage: "url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+                  backgroundImage: "url('https://images.unsplash.com/photo-1500741227949-c0b76be00d8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
                 }}
               />
               <div className="bg-gray-50 p-8 rounded-lg mt-8">
@@ -209,11 +209,11 @@ const About = () => {
 
       {/* Our Values */}
       <section className="py-20 bg-gray-50 relative">
-        {/* Background Image */}
+        {/* Background Image - Sheet metal workshop */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
@@ -280,11 +280,11 @@ const About = () => {
 
       {/* Certifications */}
       <section className="py-20 bg-gray-50 relative">
-        {/* Background Image */}
+        {/* Background Image - Manufacturing equipment */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1554306274-f23873d9a26c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
@@ -313,11 +313,11 @@ const About = () => {
 
       {/* CTA Section */}
       <section className="py-20 bg-gray-900 text-white relative">
-        {/* Background Image */}
+        {/* Background Image - Industrial metal cutting */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1582888796567-b8b8dc4b18e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
           }}
         />
         <div className="container mx-auto px-4 text-center relative z-10">
