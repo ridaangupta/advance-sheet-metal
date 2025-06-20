@@ -19,7 +19,7 @@ const Index = () => {
       <HeroSection
         title={<>Leading <span className="text-gray-300">Sheet Metal</span> Specialists</>}
         subtitle="Transform your space with custom ductwork and premium HVAC sheet metal solutions!"
-        backgroundImage="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1615902135353-b7ace986e359?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         primaryCTA={{ text: "Get Free Estimate", to: "/contact" }}
         secondaryCTA={{ text: "Call for Service", to: "tel:6045404955", isExternal: true }}
       />
