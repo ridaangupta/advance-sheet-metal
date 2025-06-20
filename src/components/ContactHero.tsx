@@ -20,7 +20,7 @@ const ContactHero = () => {
                 Call Now: (604) 540-4955
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-800">
+            <Button asChild size="lg" variant="outline" className="border-white text-white bg-transparent hover:bg-white hover:text-gray-800">
               <a href="mailto:info@advancesheetmetal.com">
                 <Mail className="w-5 h-5 mr-2" />
                 Email Us
