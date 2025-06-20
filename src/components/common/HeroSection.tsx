@@ -1,9 +1,10 @@
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { ReactNode } from "react";
 
 interface HeroSectionProps {
-  title: string;
+  title: ReactNode;
   subtitle: string;
   backgroundImage: string;
   primaryCTA?: {
