@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -58,16 +59,27 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative text-white py-20 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+          }}
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gray-900/70" />
+        
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
               HVAC Sheet Metal Services
             </h1>
-            <p className="text-xl md:text-2xl text-gray-100 mb-8">
+            <p className="text-xl md:text-2xl text-gray-100 mb-8 animate-fade-in [animation-delay:0.2s]">
               Specializing in custom ductwork fabrication and sheet metal solutions for residential, commercial, and industrial HVAC systems throughout the Lower Mainland.
             </p>
-            <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-900">
+            <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-900 animate-fade-in [animation-delay:0.4s]">
               <Link to="/contact">Request Service Quote</Link>
             </Button>
           </div>
@@ -78,17 +90,17 @@ const Services = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in">
               Our Specializations
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in [animation-delay:0.2s]">
               From precision ductwork fabrication to complete sheet metal installations, we provide specialized HVAC metalwork solutions with expert craftsmanship and reliable service.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
+              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: `${0.1 * (index + 1)}s` }}>
                 <div className="relative h-48 bg-gray-200 overflow-hidden">
                   <img 
                     src={service.image}
@@ -121,34 +133,41 @@ const Services = () => {
       </section>
 
       {/* Professional Service */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-gray-50 relative">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+          }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 animate-fade-in">
               Sheet Metal Expertise
             </h2>
-            <p className="text-xl text-gray-700 mb-8">
+            <p className="text-xl text-gray-700 mb-8 animate-fade-in [animation-delay:0.2s]">
               Our specialized team provides expert sheet metal fabrication and ductwork solutions for your project. 
               We're committed to delivering precision metalwork and customer satisfaction.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-              <div className="text-center">
+              <div className="text-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
                 <Phone className="w-12 h-12 text-gray-800 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Custom Fabrication</h3>
                 <p className="text-gray-600">Precision sheet metal work in our shop</p>
               </div>
-              <div className="text-center">
+              <div className="text-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
                 <Users className="w-12 h-12 text-gray-800 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Expert Installers</h3>
                 <p className="text-gray-600">Skilled technicians with metalwork expertise</p>
               </div>
-              <div className="text-center">
+              <div className="text-center animate-fade-in" style={{ animationDelay: '0.5s' }}>
                 <Map className="w-12 h-12 text-gray-800 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Local Service</h3>
                 <p className="text-gray-600">Serving all of Lower Mainland</p>
               </div>
             </div>
-            <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-900">
+            <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-900 animate-fade-in [animation-delay:0.6s]">
               <a href="tel:6045404955">Call for Service</a>
             </Button>
           </div>
@@ -159,12 +178,12 @@ const Services = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Why Choose Advance Sheet Metal?
               </h2>
               <div className="space-y-6">
-                <div className="flex items-start space-x-4">
+                <div className="flex items-start space-x-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
                   <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
@@ -173,7 +192,7 @@ const Services = () => {
                     <p className="text-gray-600">Fully licensed, bonded, and insured for your peace of mind.</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
+                <div className="flex items-start space-x-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
                   <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
@@ -182,7 +201,7 @@ const Services = () => {
                     <p className="text-gray-600">Decades of experience serving the Lower Mainland community.</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
+                <div className="flex items-start space-x-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
                   <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
@@ -191,7 +210,7 @@ const Services = () => {
                     <p className="text-gray-600">All work guaranteed and completed to the highest standards.</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
+                <div className="flex items-start space-x-4 animate-fade-in" style={{ animationDelay: '0.5s' }}>
                   <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
@@ -202,7 +221,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="bg-gray-50 p-8 rounded-lg animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Service Areas</h3>
               <div className="grid grid-cols-2 gap-4 text-gray-700">
                 <div className="flex items-center space-x-2">

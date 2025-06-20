@@ -76,13 +76,24 @@ const Projects = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative text-white py-20 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+          }}
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gray-900/70" />
+        
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
               Our Projects
             </h1>
-            <p className="text-xl md:text-2xl text-gray-100 mb-8">
+            <p className="text-xl md:text-2xl text-gray-100 mb-8 animate-fade-in [animation-delay:0.2s]">
               See examples of our quality workmanship across residential, commercial, and industrial HVAC projects throughout the Lower Mainland.
             </p>
           </div>
@@ -92,10 +103,19 @@ const Projects = () => {
       {/* Projects Grid */}
       <section className="py-20">
         <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in">
+              Featured Work
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in [animation-delay:0.2s]">
+              From large commercial installations to specialized industrial projects, explore our portfolio of successful HVAC sheet metal solutions.
+            </p>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-gray-200 bg-cover bg-center" 
+              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: `${0.1 * (index + 1)}s` }}>
+                <div className="h-48 bg-gray-200 bg-cover bg-center transition-transform duration-300 hover:scale-105" 
                      style={{ backgroundImage: `url(${project.image})` }}></div>
                 <CardHeader>
                   <CardTitle className="text-xl">{project.title}</CardTitle>
@@ -107,17 +127,46 @@ const Projects = () => {
         </div>
       </section>
 
+      {/* Additional Hero Section */}
+      <section className="py-20 bg-gray-50 relative">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+          }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 animate-fade-in">
+              Quality That Speaks for Itself
+            </h2>
+            <p className="text-xl text-gray-700 mb-8 animate-fade-in [animation-delay:0.2s]">
+              Every project represents our commitment to excellence in HVAC sheet metal fabrication and installation. 
+              We take pride in delivering solutions that meet the highest standards of quality and performance.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-20 bg-gray-800 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <section className="py-20 bg-gray-800 text-white relative">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+          }}
+        />
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">
             Ready to Start Your Project?
           </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto animate-fade-in [animation-delay:0.2s]">
             Let us bring the same level of expertise and quality to your HVAC project. 
             Contact us today for a free consultation and quote.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in [animation-delay:0.4s]">
             <Button asChild size="lg" variant="secondary" className="bg-white text-gray-800 hover:bg-gray-100">
               <Link to="/contact">Get Free Quote</Link>
             </Button>

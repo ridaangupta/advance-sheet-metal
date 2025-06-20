@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -101,13 +102,24 @@ const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative text-white py-20 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+          }}
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gray-900/70" />
+        
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
               About Advance Sheet Metal
             </h1>
-            <p className="text-xl md:text-2xl text-gray-100 mb-8">
+            <p className="text-xl md:text-2xl text-gray-100 mb-8 animate-fade-in [animation-delay:0.2s]">
               Serving the Lower Mainland with professional HVAC sheet metal services since 1981. 
               Family-owned, locally operated, and committed to excellence in commercial metalwork.
             </p>
@@ -119,7 +131,7 @@ const About = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Our Story
               </h2>
@@ -149,35 +161,44 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Company Highlights</h3>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Calendar className="w-6 h-6 text-gray-800" />
-                  <div>
-                    <div className="font-semibold">Established 1981</div>
-                    <div className="text-sm text-gray-600">43+ years of sheet metal expertise</div>
+            <div className="relative animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              {/* Background Image */}
+              <div 
+                className="h-96 bg-cover bg-center bg-no-repeat rounded-lg"
+                style={{
+                  backgroundImage: "url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+                }}
+              />
+              <div className="bg-gray-50 p-8 rounded-lg mt-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Company Highlights</h3>
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <Calendar className="w-6 h-6 text-gray-800" />
+                    <div>
+                      <div className="font-semibold">Established 1981</div>
+                      <div className="text-sm text-gray-600">43+ years of sheet metal expertise</div>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Users className="w-6 h-6 text-gray-800" />
-                  <div>
-                    <div className="font-semibold">1000+ Projects</div>
-                    <div className="text-sm text-gray-600">Commercial and institutional</div>
+                  <div className="flex items-center space-x-3">
+                    <Users className="w-6 h-6 text-gray-800" />
+                    <div>
+                      <div className="font-semibold">1000+ Projects</div>
+                      <div className="text-sm text-gray-600">Commercial and institutional</div>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Map className="w-6 h-6 text-gray-800" />
-                  <div>
-                    <div className="font-semibold">Lower Mainland</div>
-                    <div className="text-sm text-gray-600">Local commercial HVAC experts</div>
+                  <div className="flex items-center space-x-3">
+                    <Map className="w-6 h-6 text-gray-800" />
+                    <div>
+                      <div className="font-semibold">Lower Mainland</div>
+                      <div className="text-sm text-gray-600">Local commercial HVAC experts</div>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Phone className="w-6 h-6 text-gray-800" />
-                  <div>
-                    <div className="font-semibold">Specialized Service</div>
-                    <div className="text-sm text-gray-600">Hospitals, schools, dealerships, warehouses</div>
+                  <div className="flex items-center space-x-3">
+                    <Phone className="w-6 h-6 text-gray-800" />
+                    <div>
+                      <div className="font-semibold">Specialized Service</div>
+                      <div className="text-sm text-gray-600">Hospitals, schools, dealerships, warehouses</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -187,20 +208,27 @@ const About = () => {
       </section>
 
       {/* Our Values */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-gray-50 relative">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+          }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in">
               Our Values
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in [animation-delay:0.2s]">
               These core values guide everything we do and shape how we serve our customers and community.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
+              <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: `${0.1 * (index + 1)}s` }}>
                 <CardContent className="p-0">
                   <div className="text-4xl mb-4">{value.icon}</div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">{value.title}</h3>
@@ -216,21 +244,21 @@ const About = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in">
               Meet Our Team
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in [animation-delay:0.2s]">
               Our experienced professionals are dedicated to providing you with 
               the highest quality HVAC sheet metal services and exceptional customer experience.
             </p>
           </div>
 
-          {Object.entries(groupedTeam).map(([category, members]) => (
+          {Object.entries(groupedTeam).map(([category, members], categoryIndex) => (
             <div key={category} className="mb-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">{category}</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center animate-fade-in" style={{ animationDelay: `${0.1 * categoryIndex}s` }}>{category}</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                 {members.map((member, index) => (
-                  <Card key={index} className="text-center overflow-hidden hover:shadow-lg transition-shadow">
+                  <Card key={index} className="text-center overflow-hidden hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: `${0.1 * (categoryIndex * 4 + index + 2)}s` }}>
                     <div className="h-32 bg-gray-200 flex items-center justify-center">
                       <div className="w-20 h-20 bg-gray-400 rounded-full flex items-center justify-center">
                         <span className="text-2xl text-white font-bold">
@@ -251,20 +279,27 @@ const About = () => {
       </section>
 
       {/* Certifications */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-gray-50 relative">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+          }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 animate-fade-in">
               Licensed & Certified
             </h2>
-            <p className="text-xl text-gray-600 mb-12">
+            <p className="text-xl text-gray-600 mb-12 animate-fade-in [animation-delay:0.2s]">
               Our team maintains the highest industry certifications and follows all safety protocols 
               to ensure quality work and peace of mind for our customers.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {certifications.map((cert, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-sm border">
+                <div key={index} className="bg-white p-6 rounded-lg shadow-sm border animate-fade-in" style={{ animationDelay: `${0.1 * (index + 3)}s` }}>
                   <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white font-bold">✓</span>
                   </div>
@@ -277,16 +312,23 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-900 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <section className="py-20 bg-gray-900 text-white relative">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+          }}
+        />
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">
             Experience the Difference
           </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto animate-fade-in [animation-delay:0.2s]">
             Ready to work with a team that puts quality, safety, and customer satisfaction first? 
             Contact us today for your HVAC needs.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in [animation-delay:0.4s]">
             <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-700">
               <Link to="/contact">Get Started Today</Link>
             </Button>

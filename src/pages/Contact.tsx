@@ -11,22 +11,58 @@ const Contact = () => {
       <ContactHero />
       
       {/* Contact Form & Info */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="py-20 relative">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+          }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact Form */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 animate-fade-in">
               <ContactForm />
             </div>
 
             {/* Contact Information */}
-            <ContactInfo />
+            <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <ContactInfo />
+            </div>
           </div>
         </div>
       </section>
 
-      <ContactMap />
-      <ContactCTA />
+      {/* Additional Info Section */}
+      <section className="py-20 bg-gray-50 relative">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+          }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 animate-fade-in">
+              Get in Touch Today
+            </h2>
+            <p className="text-xl text-gray-700 mb-8 animate-fade-in [animation-delay:0.2s]">
+              Ready to discuss your HVAC sheet metal project? Our experienced team is here to provide 
+              expert consultation and reliable service throughout the Lower Mainland.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        <ContactMap />
+      </div>
+      
+      <div className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
+        <ContactCTA />
+      </div>
     </div>
   );
 };
