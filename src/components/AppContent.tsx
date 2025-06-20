@@ -12,7 +12,7 @@ import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
 
 const AppContent = () => {
-  const { showPopup, closePopup } = usePopupTimer(7);
+  const { showPopup, closePopup } = usePopupTimer(4);
 
   return (
     <div className="min-h-screen flex flex-col">
