@@ -1,4 +1,3 @@
-
 import ContactHero from "@/components/ContactHero";
 import ContactForm from "@/components/ContactForm";
 import ContactInfo from "@/components/ContactInfo";
@@ -16,7 +15,7 @@ const Contact = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1581093804475-577d72e38aa0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1697698532634-ea59b636ccea?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
@@ -40,7 +39,7 @@ const Contact = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1581093458791-9f3c3250a33a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1531053326607-9d349096d887?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
