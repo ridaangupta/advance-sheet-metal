@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -128,10 +127,10 @@ const About = () => {
       </section>
 
       {/* Company Story */}
-      <section className="py-20">
+      <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+            <div className="lg:col-span-2 animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Our Story
               </h2>
@@ -161,40 +160,33 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="relative animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              {/* Background Image - Industrial metal fabrication */}
-              <div 
-                className="h-96 bg-cover bg-center bg-no-repeat rounded-lg"
-                style={{
-                  backgroundImage: "url('https://images.unsplash.com/photo-1500741227949-c0b76be00d8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
-                }}
-              />
-              <div className="bg-gray-50 p-8 rounded-lg mt-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Company Highlights</h3>
+            <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="text-xl font-bold text-gray-900 mb-6">Company Highlights</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <Calendar className="w-6 h-6 text-gray-800" />
+                    <Calendar className="w-5 h-5 text-gray-800" />
                     <div>
                       <div className="font-semibold">Established 1981</div>
                       <div className="text-sm text-gray-600">43+ years of sheet metal expertise</div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Users className="w-6 h-6 text-gray-800" />
+                    <Users className="w-5 h-5 text-gray-800" />
                     <div>
                       <div className="font-semibold">1000+ Projects</div>
                       <div className="text-sm text-gray-600">Commercial and institutional</div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Map className="w-6 h-6 text-gray-800" />
+                    <Map className="w-5 h-5 text-gray-800" />
                     <div>
                       <div className="font-semibold">Lower Mainland</div>
                       <div className="text-sm text-gray-600">Local commercial HVAC experts</div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Phone className="w-6 h-6 text-gray-800" />
+                    <Phone className="w-5 h-5 text-gray-800" />
                     <div>
                       <div className="font-semibold">Specialized Service</div>
                       <div className="text-sm text-gray-600">Hospitals, schools, dealerships, warehouses</div>
@@ -208,16 +200,9 @@ const About = () => {
       </section>
 
       {/* Our Values */}
-      <section className="py-20 bg-gray-50 relative">
-        {/* Background Image - Sheet metal workshop */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
-          style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
-          }}
-        />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in">
               Our Values
             </h2>
@@ -226,7 +211,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
               <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: `${0.1 * (index + 1)}s` }}>
                 <CardContent className="p-0">
