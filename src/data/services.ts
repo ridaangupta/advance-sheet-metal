@@ -1,40 +1,47 @@
-
 export const services = [
+  // Fabrication Services
   {
     title: "Custom Ductwork Fabrication",
-    description: "Precision-engineered ductwork and ventilation systems designed and fabricated to your exact specifications.",
+    description: "Precision-engineered custom ductwork designed and fabricated to your exact specifications and requirements.",
     image: "/custom-ductwork.png",
-    features: ["Custom design solutions", "Precision fabrication", "Quality materials", "Code compliant"]
+    features: ["Custom design solutions", "Precision fabrication", "Quality materials", "Code compliant"],
+    category: "fabrication"
   },
   {
-    title: "Sheet Metal Installation", 
-    description: "Professional installation of custom sheet metal solutions for commercial and industrial applications.",
+    title: "Spiral Ductwork Fabrication", 
+    description: "High-efficiency spiral ductwork fabrication for optimal airflow and space utilization in commercial and industrial applications.",
     image: "/sheet-metal-install.png",
-    features: ["Expert installation", "Proper sealing", "System integration", "Quality workmanship"]
+    features: ["Spiral duct systems", "Space optimization", "Improved airflow", "Industrial grade"],
+    category: "fabrication"
   },
   {
-    title: "HVAC Ductwork Services",
-    description: "Complete ductwork solutions including design, fabrication, installation, and maintenance services.",
-    image: "/ventilation-systems.png",
-    features: ["Exhaust systems", "Makeup air units", "Industrial ventilation", "Custom solutions"]
-  },
-  {
-    title: "Ductwork Repair & Modification",
-    description: "Professional repair and modification services for existing ductwork systems to improve efficiency and performance.",
-    image: "/ductwork-repair.png",
-    features: ["System repairs", "Efficiency improvements", "Modifications", "Maintenance services"]
-  },
-  {
-    title: "Commercial Kitchen Exhaust",
-    description: "Specialized kitchen exhaust systems and ductwork for restaurants and commercial food service operations.",
+    title: "Kitchen Duct Fabrication",
+    description: "Specialized kitchen exhaust ductwork fabrication for restaurants and commercial food service operations.",
     image: "/kitchen-exhaust.png",
-    features: ["Kitchen exhaust hoods", "Grease duct systems", "Fire suppression ready", "Health code compliant"]
+    features: ["Kitchen exhaust systems", "Grease duct fabrication", "Fire suppression ready", "Health code compliant"],
+    category: "fabrication"
+  },
+  // Installation Services
+  {
+    title: "Industrial HVAC Installation",
+    description: "Heavy-duty HVAC ductwork installation for industrial facilities, including specialized ventilation and process equipment.",
+    image: "/industrial-metal.png",
+    features: ["Heavy-duty installation", "Industrial ventilation", "Process equipment", "Safety compliant"],
+    category: "installation"
   },
   {
-    title: "Industrial Sheet Metal",
-    description: "Heavy-duty sheet metal fabrication and installation for industrial facilities, including specialized ventilation and process equipment.",
-    image: "/industrial-metal.png",
-    features: ["Heavy-duty construction", "Industrial grade materials", "Process ventilation", "Custom fabrication"]
+    title: "Commercial HVAC Installation",
+    description: "Professional HVAC ductwork installation for schools, restaurants, dealerships, high-rises, and other commercial buildings.",
+    image: "/ventilation-systems.png",
+    features: ["Schools & education facilities", "Restaurants & food service", "Auto dealerships", "High-rise buildings"],
+    category: "installation"
+  },
+  {
+    title: "Residential HVAC Installation",
+    description: "Expert residential HVAC ductwork installation and modification services for homes throughout the Lower Mainland.",
+    image: "/ductwork-repair.png",
+    features: ["Home ductwork installation", "System upgrades", "Energy efficiency", "Quality workmanship"],
+    category: "installation"
   }
 ];
 

@@ -12,6 +12,9 @@ const Index = () => {
   // Preload critical images
   useImagePreload(services.map(s => s.image));
 
+  const fabricationServices = services.filter(service => service.category === "fabrication");
+  const installationServices = services.filter(service => service.category === "installation");
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -29,21 +32,45 @@ const Index = () => {
               HVAC Sheet Metal Solutions
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in [animation-delay:0.2s]">
-              Specializing in custom ductwork fabrication, sheet metal installation, and precision metalwork 
+              Specializing in custom ductwork fabrication and professional installation services 
               for residential, commercial, and industrial HVAC systems throughout Delta and the Lower Mainland.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.slice(0, 3).map((service, index) => (
-              <ServiceCard
-                key={index}
-                {...service}
-                index={index}
-                buttonText="Learn More"
-                buttonLink="/services"
-              />
-            ))}
+          {/* Fabrication Services */}
+          <div className="mb-16">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
+              Fabrication Services
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {fabricationServices.map((service, index) => (
+                <ServiceCard
+                  key={index}
+                  {...service}
+                  index={index}
+                  buttonText="Learn More"
+                  buttonLink="/services"
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Installation Services */}
+          <div>
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
+              Installation Services
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {installationServices.map((service, index) => (
+                <ServiceCard
+                  key={index}
+                  {...service}
+                  index={index + 3}
+                  buttonText="Learn More"
+                  buttonLink="/services"
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>

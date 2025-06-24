@@ -12,6 +12,7 @@ interface ServiceCardProps {
   buttonLink?: string;
   index?: number;
   isDetailed?: boolean;
+  category?: string;
 }
 
 const ServiceCard = ({ 
@@ -22,7 +23,8 @@ const ServiceCard = ({
   buttonText = "Learn More", 
   buttonLink = "/services",
   index = 0,
-  isDetailed = false
+  isDetailed = false,
+  category
 }: ServiceCardProps) => {
   return (
     <Card className="service-card overflow-hidden hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: `${0.1 * (index + 1)}s` }}>
