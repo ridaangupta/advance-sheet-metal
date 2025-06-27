@@ -110,8 +110,8 @@ const Index = () => {
                 <div className="flex items-center space-x-3">
                   <Calendar className="w-6 h-6 text-gray-800" />
                   <div>
-                    <div className="font-semibold">Mon-Fri: 7AM-6PM</div>
-                    <div className="text-sm text-gray-600">Saturday: 8AM-4PM</div>
+                    <div className="font-semibold">Mon-Fri: 7AM-4PM</div>
+                    <div className="text-sm text-gray-600">Sunday: Closed</div>
                   </div>
                 </div>
               </div>

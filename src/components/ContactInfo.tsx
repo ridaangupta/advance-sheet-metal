@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Mail, Map, Clock } from "lucide-react";
 
@@ -53,8 +52,7 @@ const ContactInfo = () => {
             <Clock className="w-5 h-5 text-gray-800" />
             <div>
               <div className="font-semibold">Regular Hours</div>
-              <div className="text-gray-600">Monday - Friday: 7:00 AM - 6:00 PM</div>
-              <div className="text-gray-600">Saturday: 8:00 AM - 4:00 PM</div>
+              <div className="text-gray-600">Monday - Friday: 7:00 AM - 4:00 PM</div>
               <div className="text-gray-600">Sunday: Closed</div>
             </div>
           </div>
