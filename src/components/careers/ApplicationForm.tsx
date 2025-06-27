@@ -201,10 +201,9 @@ const ApplicationForm = () => {
                         <SelectValue placeholder="Select experience level" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="entry">Entry Level / Apprentice</SelectItem>
-                        <SelectItem value="junior">Junior (1-3 years)</SelectItem>
-                        <SelectItem value="intermediate">Intermediate (3-7 years)</SelectItem>
-                        <SelectItem value="senior">Senior (7+ years)</SelectItem>
+                        <SelectItem value="apprentice">Apprentice</SelectItem>
+                        <SelectItem value="journeyman">Journeyman</SelectItem>
+                        <SelectItem value="foreman">Foreman</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
