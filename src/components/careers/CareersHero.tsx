@@ -22,23 +22,6 @@ const CareersHero = () => {
             Build your career with the Lower Mainland's leading sheet metal specialists. 
             40+ years of excellence, competitive benefits, and opportunities for growth.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in [animation-delay:0.4s]">
-            <Button 
-              size="lg" 
-              className="bg-gray-800 hover:bg-gray-700 text-lg px-8 py-4"
-              onClick={() => document.getElementById('application-form')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Apply Now
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-gray-900 text-lg px-8 py-4"
-              onClick={() => document.getElementById('current-openings')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              View Openings
-            </Button>
-          </div>
         </div>
       </div>
     </section>
