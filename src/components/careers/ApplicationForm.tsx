@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -190,11 +189,8 @@ const ApplicationForm = () => {
                         <SelectValue placeholder="Select a position" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="fabricator">Sheet Metal Fabricator</SelectItem>
-                        <SelectItem value="installer">HVAC Installer</SelectItem>
-                        <SelectItem value="apprentice">Apprentice Position</SelectItem>
-                        <SelectItem value="supervisor">Site Supervisor</SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
+                        <SelectItem value="foreman">Sheet Metal Foreman</SelectItem>
+                        <SelectItem value="apprentice">Sheet Metal Apprentice</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
