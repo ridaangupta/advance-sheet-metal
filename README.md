@@ -1,73 +1,138 @@
-# Welcome to your Lovable project
 
-## Project info
+# Advance Sheet Metal - Professional Website
 
-**URL**: https://lovable.dev/projects/17db7400-9b61-4892-bd06-1c5cd47b5bdf
+A comprehensive business website developed for Advance Sheet Metal, a leading HVAC sheet metal contractor serving the Lower Mainland since 1981. This project was completed as part of an internship to modernize the company's digital presence and improve customer engagement.
 
-## How can I edit this code?
+**Live Website**: [advancesheetmetal.com](https://advancesheetmetal.com)
 
-There are several ways of editing your application.
+## About the Project
 
-**Use Lovable**
+This website was developed during my internship at Advance Sheet Metal to create a modern, professional online presence for the family-owned business. The site showcases their expertise in commercial HVAC sheet metal work, custom ductwork, and ventilation systems while providing an intuitive user experience for potential clients.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/17db7400-9b61-4892-bd06-1c5cd47b5bdf) and start prompting.
+## Key Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
+- **Interactive Service Showcase**: Detailed service pages with professional imagery
+- **Project Portfolio**: Gallery showcasing completed commercial projects
+- **Contact Integration**: Multiple contact methods including forms, phone, and location mapping
+- **Career Portal**: Job listings and application system for potential employees
+- **About Section**: Company history, values, team profiles, and certifications
+- **SEO Optimized**: Meta tags, semantic HTML, and performance optimization
 
-**Use your preferred IDE**
+## Pages & Functionality
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Home**: Hero section, services overview, testimonials, and call-to-action
+- **Services**: Comprehensive breakdown of HVAC sheet metal services offered
+- **Projects**: Portfolio gallery of completed commercial work
+- **About**: Company story, values, team members, and industry certifications
+- **Careers**: Current job openings with integrated application forms
+- **Contact**: Contact forms, business information, and interactive map integration
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Technologies Used
 
-Follow these steps:
+### Frontend Framework
+- **React 18** - Modern component-based UI framework
+- **TypeScript** - Type-safe JavaScript for better development experience
+- **Vite** - Fast build tool and development server
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Styling & UI
+- **Tailwind CSS** - Utility-first CSS framework for rapid styling
+- **Shadcn/ui** - High-quality, accessible component library
+- **Lucide React** - Beautiful, customizable icon set
+- **CSS Grid & Flexbox** - Modern layout techniques
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### State Management & Data
+- **React Hook Form** - Efficient form handling with validation
+- **Zod** - Schema validation for forms and data
+- **TanStack Query** - Server state management and caching
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Backend & Services
+- **Supabase** - Backend-as-a-Service for database and authentication
+- **Mapbox GL** - Interactive mapping for location services
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Development Tools
+- **ESLint** - Code linting and consistency
+- **PostCSS** - CSS processing and optimization
+- **React Router** - Client-side routing
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone [repository-url]
+cd advance-sheet-metal-website
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Set up environment variables:
+```bash
+# Create .env.local file with necessary API keys
+# Supabase configuration
+# Mapbox access token
+```
+
+4. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+5. Open [http://localhost:5173](http://localhost:5173) to view the site
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Shadcn/ui components
+│   ├── about/          # About page components
+│   ├── careers/        # Career page components
+│   └── common/         # Shared components
+├── pages/              # Main page components
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+├── data/               # Static data and configurations
+└── integrations/       # Third-party service integrations
+```
 
-This project is built with:
+## Development Experience
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This project provided hands-on experience with:
+- Modern React development patterns and best practices
+- TypeScript integration for type safety
+- Component-driven architecture
+- Responsive web design principles
+- Form handling and validation
+- Third-party API integration
+- Performance optimization techniques
+- Professional client communication and requirements gathering
 
-## How can I deploy this project?
+## Business Impact
 
-Simply open [Lovable](https://lovable.dev/projects/17db7400-9b61-4892-bd06-1c5cd47b5bdf) and click on Share -> Publish.
+The website successfully modernized Advance Sheet Metal's digital presence, resulting in:
+- Improved professional image and credibility
+- Enhanced customer engagement and lead generation
+- Streamlined contact and inquiry processes
+- Better showcase of services and completed projects
+- Mobile-friendly experience for on-the-go customers
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**Developed by**: [Your Name] - Software Development Intern at Advance Sheet Metal  
+**Company**: Advance Sheet Metal - Serving the Lower Mainland since 1981  
+**Website**: [advancesheetmetal.com](https://advancesheetmetal.com)
